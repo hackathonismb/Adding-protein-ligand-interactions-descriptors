@@ -1,0 +1,1149 @@
+{
+  "bindingsites": {
+    "1": {
+      "has_interactions": "True",
+      "information": {
+        "identifiers": {
+          "longname": "G39",
+          "ligtype": "SMALLMOLECULE",
+          "hetid": "G39",
+          "chain": "A",
+          "position": 800,
+          "composite": "False",
+          "members": {
+            "member": {
+              "value": "G39:A:800",
+              "atr": {
+                "id": "1"
+              }
+            }
+          },
+          "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
+          "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+        },
+        "lig_properties": {
+          "num_heavy_atoms": 20,
+          "num_hbd": 4,
+          "num_unpaired_hbd": 1,
+          "num_hba": 6,
+          "num_unpaired_hba": 2,
+          "num_hal": 0,
+          "num_unpaired_hal": 0,
+          "num_aromatic_rings": 0,
+          "num_rotatable_bonds": 7,
+          "molweight": 284.35136,
+          "logp": 1.8981
+        },
+        "interacting_chains": {
+          "interacting_chain": {
+            "value": "A",
+            "atr": {
+              "id": "1"
+            }
+          }
+        },
+        "bs_residues": {
+          "bs_residue": {
+            "value": "349A",
+            "atr": {
+              "aa": "VAL",
+              "contact": "False",
+              "id": "37",
+              "min_dist": "5.5"
+            }
+          }
+        },
+        "interactions": {
+          "hydrophobic_interactions": {
+            "hydrophobic_interaction": {
+              "resnr": 294,
+              "restype": "ASN",
+              "reschain": "A",
+              "resnr_lig": 800,
+              "restype_lig": "G39",
+              "reschain_lig": "A",
+              "dist": 3.9,
+              "ligcarbonidx": 23723,
+              "protcarbonidx": 1621,
+              "ligcoo": {
+                "x": -1.01,
+                "y": 85.458,
+                "z": 108.077
+              },
+              "protcoo": {
+                "x": -3.103,
+                "y": 88.752,
+                "z": 107.978
+              }
+            }
+          },
+          "hydrogen_bonds": {
+            "hydrogen_bond": {
+              "resnr": 347,
+              "restype": "TYR",
+              "reschain": "A",
+              "resnr_lig": 800,
+              "restype_lig": "G39",
+              "reschain_lig": "A",
+              "sidechain": "True",
+              "dist_h-a": 3.38,
+              "dist_d-a": 3.86,
+              "don_angle": 114.14,
+              "protisdon": "True",
+              "donoridx": 1998,
+              "donortype": "O3",
+              "acceptoridx": 23707,
+              "acceptortype": "O.co2",
+              "ligcoo": {
+                "x": -3.554,
+                "y": 79.79,
+                "z": 111.655
+              },
+              "protcoo": {
+                "x": -4.544,
+                "y": 82.866,
+                "z": 113.762
+              }
+            }
+          },
+          "salt_bridges": {
+            "salt_bridge": {
+              "resnr": 371,
+              "restype": "ARG",
+              "reschain": "A",
+              "resnr_lig": 800,
+              "restype_lig": "G39",
+              "reschain_lig": "A",
+              "dist": 3.38,
+              "protispos": "True",
+              "lig_group": "Carboxylate",
+              "lig_idx_list": {
+                "idx": {
+                  "value": 23707,
+                  "atr": {
+                    "id": "2"
+                  }
+                }
+              },
+              "ligcoo": {
+                "x": -3.575,
+                "y": 80.871,
+                "z": 111.447
+              },
+              "protcoo": {
+                "x": -6.935,
+                "y": 80.734,
+                "z": 111.77
+              }
+            }
+          }
+        },
+        "mappings": {
+          "smiles_to_pdb": "1:23722,2:23721,3:23719,4:23718,5:23716,6:23717,7:23708,8:23709,9:23710,10:23711,11:23712,12:23713,13:23714,14:23715,15:23724,16:23705,17:23706,18:23707,19:23720,20:23723"
+        }
+      }
+    },
+    "2": {
+      "has_interactions": "True",
+      "information": {
+        "identifiers": {
+          "longname": "G39",
+          "ligtype": "SMALLMOLECULE",
+          "hetid": "G39",
+          "chain": "B",
+          "position": 801,
+          "composite": "False",
+          "members": {
+            "member": {
+              "value": "G39:B:801",
+              "atr": {
+                "id": "1"
+              }
+            }
+          },
+          "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
+          "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+        },
+        "lig_properties": {
+          "num_heavy_atoms": 20,
+          "num_hbd": 4,
+          "num_unpaired_hbd": 1,
+          "num_hba": 6,
+          "num_unpaired_hba": 2,
+          "num_hal": 0,
+          "num_unpaired_hal": 0,
+          "num_aromatic_rings": 0,
+          "num_rotatable_bonds": 7,
+          "molweight": 284.35136,
+          "logp": 1.8981
+        },
+        "interacting_chains": {
+          "interacting_chain": {
+            "value": "B",
+            "atr": {
+              "id": "1"
+            }
+          }
+        },
+        "bs_residues": {
+          "bs_residue": {
+            "value": "245B",
+            "atr": {
+              "aa": "PRO",
+              "contact": "False",
+              "id": "37",
+              "min_dist": "6.6"
+            }
+          }
+        },
+        "interactions": {
+          "hydrophobic_interactions": {
+            "hydrophobic_interaction": {
+              "resnr": 276,
+              "restype": "GLU",
+              "reschain": "B",
+              "resnr_lig": 801,
+              "restype_lig": "G39",
+              "reschain_lig": "B",
+              "dist": 3.82,
+              "ligcarbonidx": 23740,
+              "protcarbonidx": 4451,
+              "ligcoo": {
+                "x": 1.724,
+                "y": 15.828,
+                "z": 106.818
+              },
+              "protcoo": {
+                "x": 2.306,
+                "y": 14.013,
+                "z": 103.505
+              }
+            }
+          },
+          "hydrogen_bonds": {
+            "hydrogen_bond": {
+              "resnr": 347,
+              "restype": "TYR",
+              "reschain": "B",
+              "resnr_lig": 801,
+              "restype_lig": "G39",
+              "reschain_lig": "B",
+              "sidechain": "True",
+              "dist_h-a": 3.48,
+              "dist_d-a": 3.94,
+              "don_angle": 112.72,
+              "protisdon": "True",
+              "donoridx": 4961,
+              "donortype": "O3",
+              "acceptoridx": 23727,
+              "acceptortype": "O.co2",
+              "ligcoo": {
+                "x": 5.18,
+                "y": 20.723,
+                "z": 111.454
+              },
+              "protcoo": {
+                "x": 6.105,
+                "y": 17.537,
+                "z": 113.581
+              }
+            }
+          },
+          "salt_bridges": {
+            "salt_bridge": {
+              "resnr": 371,
+              "restype": "ARG",
+              "reschain": "B",
+              "resnr_lig": 801,
+              "restype_lig": "G39",
+              "reschain_lig": "B",
+              "dist": 3.38,
+              "protispos": "True",
+              "lig_group": "Carboxylate",
+              "lig_idx_list": {
+                "idx": {
+                  "value": 23727,
+                  "atr": {
+                    "id": "2"
+                  }
+                }
+              },
+              "ligcoo": {
+                "x": 5.24,
+                "y": 19.633,
+                "z": 111.282
+              },
+              "protcoo": {
+                "x": 8.576,
+                "y": 19.724,
+                "z": 111.82
+              }
+            }
+          }
+        },
+        "mappings": {
+          "smiles_to_pdb": "1:23742,2:23741,3:23739,4:23738,5:23736,6:23737,7:23728,8:23729,9:23730,10:23731,11:23732,12:23733,13:23734,14:23735,15:23744,16:23725,17:23726,18:23727,19:23740,20:23743"
+        }
+      }
+    },
+    "3": {
+      "has_interactions": "True",
+      "information": {
+        "identifiers": {
+          "longname": "G39",
+          "ligtype": "SMALLMOLECULE",
+          "hetid": "G39",
+          "chain": "C",
+          "position": 802,
+          "composite": "False",
+          "members": {
+            "member": {
+              "value": "G39:C:802",
+              "atr": {
+                "id": "1"
+              }
+            }
+          },
+          "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
+          "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+        },
+        "lig_properties": {
+          "num_heavy_atoms": 20,
+          "num_hbd": 4,
+          "num_unpaired_hbd": 1,
+          "num_hba": 6,
+          "num_unpaired_hba": 2,
+          "num_hal": 0,
+          "num_unpaired_hal": 0,
+          "num_aromatic_rings": 0,
+          "num_rotatable_bonds": 7,
+          "molweight": 284.35136,
+          "logp": 1.8981
+        },
+        "interacting_chains": {
+          "interacting_chain": {
+            "value": "C",
+            "atr": {
+              "id": "1"
+            }
+          }
+        },
+        "bs_residues": {
+          "bs_residue": {
+            "value": "245C",
+            "atr": {
+              "aa": "PRO",
+              "contact": "False",
+              "id": "37",
+              "min_dist": "6.5"
+            }
+          }
+        },
+        "interactions": {
+          "hydrophobic_interactions": {
+            "hydrophobic_interaction": {
+              "resnr": 276,
+              "restype": "GLU",
+              "reschain": "C",
+              "resnr_lig": 802,
+              "restype_lig": "G39",
+              "reschain_lig": "C",
+              "dist": 3.84,
+              "ligcarbonidx": 23760,
+              "protcarbonidx": 7414,
+              "ligcoo": {
+                "x": -33.545,
+                "y": 49.377,
+                "z": 105.994
+              },
+              "protcoo": {
+                "x": -34.951,
+                "y": 48.994,
+                "z": 102.44
+              }
+            }
+          },
+          "hydrogen_bonds": {
+            "hydrogen_bond": {
+              "resnr": 347,
+              "restype": "TYR",
+              "reschain": "C",
+              "resnr_lig": 802,
+              "restype_lig": "G39",
+              "reschain_lig": "C",
+              "sidechain": "True",
+              "dist_h-a": 2.67,
+              "dist_d-a": 3.06,
+              "don_angle": 106.15,
+              "protisdon": "True",
+              "donoridx": 7924,
+              "donortype": "O3",
+              "acceptoridx": 23746,
+              "acceptortype": "O.co2",
+              "ligcoo": {
+                "x": -30.837,
+                "y": 45.658,
+                "z": 110.022
+              },
+              "protcoo": {
+                "x": -31.995,
+                "y": 44.862,
+                "z": 112.743
+              }
+            }
+          },
+          "salt_bridges": {
+            "salt_bridge": {
+              "resnr": 371,
+              "restype": "ARG",
+              "reschain": "C",
+              "resnr_lig": 802,
+              "restype_lig": "G39",
+              "reschain_lig": "C",
+              "dist": 3.54,
+              "protispos": "True",
+              "lig_group": "Carboxylate",
+              "lig_idx_list": {
+                "idx": {
+                  "value": 23747,
+                  "atr": {
+                    "id": "2"
+                  }
+                }
+              },
+              "ligcoo": {
+                "x": -29.761,
+                "y": 45.716,
+                "z": 110.238
+              },
+              "protcoo": {
+                "x": -29.643,
+                "y": 42.261,
+                "z": 111.001
+              }
+            }
+          }
+        },
+        "mappings": {
+          "smiles_to_pdb": "1:23762,2:23761,3:23759,4:23758,5:23756,6:23757,7:23748,8:23749,9:23750,10:23751,11:23752,12:23753,13:23754,14:23755,15:23764,16:23745,17:23746,18:23747,19:23760,20:23763"
+        }
+      }
+    },
+    "4": {
+      "has_interactions": "True",
+      "information": {
+        "identifiers": {
+          "longname": "G39",
+          "ligtype": "SMALLMOLECULE",
+          "hetid": "G39",
+          "chain": "D",
+          "position": 803,
+          "composite": "False",
+          "members": {
+            "member": {
+              "value": "G39:D:803",
+              "atr": {
+                "id": "1"
+              }
+            }
+          },
+          "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
+          "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+        },
+        "lig_properties": {
+          "num_heavy_atoms": 20,
+          "num_hbd": 4,
+          "num_unpaired_hbd": 1,
+          "num_hba": 6,
+          "num_unpaired_hba": 2,
+          "num_hal": 0,
+          "num_unpaired_hal": 0,
+          "num_aromatic_rings": 0,
+          "num_rotatable_bonds": 7,
+          "molweight": 284.35136,
+          "logp": 1.8981
+        },
+        "interacting_chains": {
+          "interacting_chain": {
+            "value": "D",
+            "atr": {
+              "id": "1"
+            }
+          }
+        },
+        "bs_residues": {
+          "bs_residue": {
+            "value": "292D",
+            "atr": {
+              "aa": "ARG",
+              "contact": "True",
+              "id": "37",
+              "min_dist": "3.1"
+            }
+          }
+        },
+        "interactions": {
+          "hydrophobic_interactions": {
+            "hydrophobic_interaction": {
+              "resnr": 276,
+              "restype": "GLU",
+              "reschain": "D",
+              "resnr_lig": 803,
+              "restype_lig": "G39",
+              "reschain_lig": "D",
+              "dist": 3.68,
+              "ligcarbonidx": 23780,
+              "protcarbonidx": 10377,
+              "ligcoo": {
+                "x": 35.252,
+                "y": 51.251,
+                "z": 108.227
+              },
+              "protcoo": {
+                "x": 37.128,
+                "y": 51.527,
+                "z": 105.076
+              }
+            }
+          },
+          "hydrogen_bonds": {
+            "hydrogen_bond": {
+              "resnr": 347,
+              "restype": "TYR",
+              "reschain": "D",
+              "resnr_lig": 803,
+              "restype_lig": "G39",
+              "reschain_lig": "D",
+              "sidechain": "True",
+              "dist_h-a": 2.75,
+              "dist_d-a": 3.11,
+              "don_angle": 104.11,
+              "protisdon": "True",
+              "donoridx": 10887,
+              "donortype": "O3",
+              "acceptoridx": 23766,
+              "acceptortype": "O.co2",
+              "ligcoo": {
+                "x": 32.363,
+                "y": 54.65,
+                "z": 112.252
+              },
+              "protcoo": {
+                "x": 33.416,
+                "y": 55.682,
+                "z": 114.994
+              }
+            }
+          },
+          "salt_bridges": {
+            "salt_bridge": {
+              "resnr": 371,
+              "restype": "ARG",
+              "reschain": "D",
+              "resnr_lig": 803,
+              "restype_lig": "G39",
+              "reschain_lig": "D",
+              "dist": 3.39,
+              "protispos": "True",
+              "lig_group": "Carboxylate",
+              "lig_idx_list": {
+                "idx": {
+                  "value": 23767,
+                  "atr": {
+                    "id": "2"
+                  }
+                }
+              },
+              "ligcoo": {
+                "x": 31.277,
+                "y": 54.603,
+                "z": 112.448
+              },
+              "protcoo": {
+                "x": 31.024,
+                "y": 57.94,
+                "z": 112.981
+              }
+            }
+          }
+        },
+        "mappings": {
+          "smiles_to_pdb": "1:23782,2:23781,3:23779,4:23778,5:23776,6:23777,7:23768,8:23769,9:23770,10:23771,11:23772,12:23773,13:23774,14:23775,15:23784,16:23765,17:23766,18:23767,19:23780,20:23783"
+        }
+      }
+    },
+    "5": {
+      "has_interactions": "True",
+      "information": {
+        "identifiers": {
+          "longname": "G39",
+          "ligtype": "SMALLMOLECULE",
+          "hetid": "G39",
+          "chain": "E",
+          "position": 804,
+          "composite": "False",
+          "members": {
+            "member": {
+              "value": "G39:E:804",
+              "atr": {
+                "id": "1"
+              }
+            }
+          },
+          "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
+          "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+        },
+        "lig_properties": {
+          "num_heavy_atoms": 20,
+          "num_hbd": 4,
+          "num_unpaired_hbd": 1,
+          "num_hba": 6,
+          "num_unpaired_hba": 2,
+          "num_hal": 0,
+          "num_unpaired_hal": 0,
+          "num_aromatic_rings": 0,
+          "num_rotatable_bonds": 7,
+          "molweight": 284.35136,
+          "logp": 1.8981
+        },
+        "interacting_chains": {
+          "interacting_chain": {
+            "value": "E",
+            "atr": {
+              "id": "1"
+            }
+          }
+        },
+        "bs_residues": {
+          "bs_residue": {
+            "value": "178E",
+            "atr": {
+              "aa": "TRP",
+              "contact": "True",
+              "id": "35",
+              "min_dist": "3.9"
+            }
+          }
+        },
+        "interactions": {
+          "hydrophobic_interactions": {
+            "hydrophobic_interaction": {
+              "resnr": 276,
+              "restype": "GLU",
+              "reschain": "E",
+              "resnr_lig": 804,
+              "restype_lig": "G39",
+              "reschain_lig": "E",
+              "dist": 3.65,
+              "ligcarbonidx": 23800,
+              "protcarbonidx": 13340,
+              "ligcoo": {
+                "x": -40.496,
+                "y": -116.0,
+                "z": 89.343
+              },
+              "protcoo": {
+                "x": -43.895,
+                "y": -117.154,
+                "z": 90.016
+              }
+            }
+          },
+          "hydrogen_bonds": {
+            "hydrogen_bond": {
+              "resnr": 152,
+              "restype": "ARG",
+              "reschain": "E",
+              "resnr_lig": 804,
+              "restype_lig": "G39",
+              "reschain_lig": "E",
+              "sidechain": "True",
+              "dist_h-a": 2.03,
+              "dist_d-a": 2.77,
+              "don_angle": 129.86,
+              "protisdon": "True",
+              "donoridx": 12393,
+              "donortype": "Ng+",
+              "acceptoridx": 23794,
+              "acceptortype": "O2",
+              "ligcoo": {
+                "x": -38.151,
+                "y": -110.71,
+                "z": 88.27
+              },
+              "protcoo": {
+                "x": -37.086,
+                "y": -109.446,
+                "z": 90.494
+              }
+            }
+          },
+          "salt_bridges": {
+            "salt_bridge": {
+              "resnr": 371,
+              "restype": "ARG",
+              "reschain": "E",
+              "resnr_lig": 804,
+              "restype_lig": "G39",
+              "reschain_lig": "E",
+              "dist": 3.5,
+              "protispos": "True",
+              "lig_group": "Carboxylate",
+              "lig_idx_list": {
+                "idx": {
+                  "value": 23787,
+                  "atr": {
+                    "id": "2"
+                  }
+                }
+              },
+              "ligcoo": {
+                "x": -35.651,
+                "y": -116.886,
+                "z": 84.681
+              },
+              "protcoo": {
+                "x": -34.736,
+                "y": -119.771,
+                "z": 82.923
+              }
+            }
+          }
+        },
+        "mappings": {
+          "smiles_to_pdb": "1:23802,2:23801,3:23799,4:23798,5:23796,6:23797,7:23788,8:23789,9:23790,10:23791,11:23792,12:23793,13:23794,14:23795,15:23804,16:23785,17:23786,18:23787,19:23800,20:23803"
+        }
+      }
+    },
+    "6": {
+      "has_interactions": "True",
+      "information": {
+        "identifiers": {
+          "longname": "G39",
+          "ligtype": "SMALLMOLECULE",
+          "hetid": "G39",
+          "chain": "F",
+          "position": 805,
+          "composite": "False",
+          "members": {
+            "member": {
+              "value": "G39:F:805",
+              "atr": {
+                "id": "1"
+              }
+            }
+          },
+          "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
+          "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+        },
+        "lig_properties": {
+          "num_heavy_atoms": 20,
+          "num_hbd": 4,
+          "num_unpaired_hbd": 1,
+          "num_hba": 6,
+          "num_unpaired_hba": 2,
+          "num_hal": 0,
+          "num_unpaired_hal": 0,
+          "num_aromatic_rings": 0,
+          "num_rotatable_bonds": 7,
+          "molweight": 284.35136,
+          "logp": 1.8981
+        },
+        "interacting_chains": {
+          "interacting_chain": {
+            "value": "F",
+            "atr": {
+              "id": "1"
+            }
+          }
+        },
+        "bs_residues": {
+          "bs_residue": {
+            "value": "292F",
+            "atr": {
+              "aa": "ARG",
+              "contact": "True",
+              "id": "35",
+              "min_dist": "3.3"
+            }
+          }
+        },
+        "interactions": {
+          "hydrophobic_interactions": {
+            "hydrophobic_interaction": {
+              "resnr": 294,
+              "restype": "ASN",
+              "reschain": "F",
+              "resnr_lig": 805,
+              "restype_lig": "G39",
+              "reschain_lig": "F",
+              "dist": 3.99,
+              "ligcarbonidx": 23823,
+              "protcarbonidx": 16436,
+              "ligcoo": {
+                "x": -30.155,
+                "y": -75.985,
+                "z": 32.635
+              },
+              "protcoo": {
+                "x": -29.946,
+                "y": -72.301,
+                "z": 31.127
+              }
+            }
+          },
+          "hydrogen_bonds": {
+            "hydrogen_bond": {
+              "resnr": 152,
+              "restype": "ARG",
+              "reschain": "F",
+              "resnr_lig": 805,
+              "restype_lig": "G39",
+              "reschain_lig": "F",
+              "sidechain": "True",
+              "dist_h-a": 2.13,
+              "dist_d-a": 2.88,
+              "don_angle": 132.17,
+              "protisdon": "True",
+              "donoridx": 15356,
+              "donortype": "Ng+",
+              "acceptoridx": 23814,
+              "acceptortype": "O2",
+              "ligcoo": {
+                "x": -29.32,
+                "y": -82.557,
+                "z": 34.159
+              },
+              "protcoo": {
+                "x": -27.585,
+                "y": -83.894,
+                "z": 32.288
+              }
+            }
+          },
+          "salt_bridges": {
+            "salt_bridge": {
+              "resnr": 371,
+              "restype": "ARG",
+              "reschain": "F",
+              "resnr_lig": 805,
+              "restype_lig": "G39",
+              "reschain_lig": "F",
+              "dist": 3.38,
+              "protispos": "True",
+              "lig_group": "Carboxylate",
+              "lig_idx_list": {
+                "idx": {
+                  "value": 23807,
+                  "atr": {
+                    "id": "2"
+                  }
+                }
+              },
+              "ligcoo": {
+                "x": -27.85,
+                "y": -76.454,
+                "z": 38.487
+              },
+              "protcoo": {
+                "x": -27.486,
+                "y": -73.63,
+                "z": 40.3
+              }
+            }
+          }
+        },
+        "mappings": {
+          "smiles_to_pdb": "1:23822,2:23821,3:23819,4:23818,5:23816,6:23817,7:23808,8:23809,9:23810,10:23811,11:23812,12:23813,13:23814,14:23815,15:23824,16:23805,17:23806,18:23807,19:23820,20:23823"
+        }
+      }
+    },
+    "7": {
+      "has_interactions": "True",
+      "information": {
+        "identifiers": {
+          "longname": "G39",
+          "ligtype": "SMALLMOLECULE",
+          "hetid": "G39",
+          "chain": "G",
+          "position": 806,
+          "composite": "False",
+          "members": {
+            "member": {
+              "value": "G39:G:806",
+              "atr": {
+                "id": "1"
+              }
+            }
+          },
+          "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
+          "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+        },
+        "lig_properties": {
+          "num_heavy_atoms": 20,
+          "num_hbd": 4,
+          "num_unpaired_hbd": 1,
+          "num_hba": 6,
+          "num_unpaired_hba": 2,
+          "num_hal": 0,
+          "num_unpaired_hal": 0,
+          "num_aromatic_rings": 0,
+          "num_rotatable_bonds": 7,
+          "molweight": 284.35136,
+          "logp": 1.8981
+        },
+        "interacting_chains": {
+          "interacting_chain": {
+            "value": "G",
+            "atr": {
+              "id": "1"
+            }
+          }
+        },
+        "bs_residues": {
+          "bs_residue": {
+            "value": "178G",
+            "atr": {
+              "aa": "TRP",
+              "contact": "True",
+              "id": "37",
+              "min_dist": "3.7"
+            }
+          }
+        },
+        "interactions": {
+          "hydrophobic_interactions": {
+            "hydrophobic_interaction": {
+              "resnr": 276,
+              "restype": "GLU",
+              "reschain": "G",
+              "resnr_lig": 806,
+              "restype_lig": "G39",
+              "reschain_lig": "G",
+              "dist": 3.8,
+              "ligcarbonidx": 23840,
+              "protcarbonidx": 19266,
+              "ligcoo": {
+                "x": -33.381,
+                "y": -125.326,
+                "z": 41.999
+              },
+              "protcoo": {
+                "x": -36.475,
+                "y": -126.658,
+                "z": 40.233
+              }
+            }
+          },
+          "hydrogen_bonds": {
+            "hydrogen_bond": {
+              "resnr": 406,
+              "restype": "TYR",
+              "reschain": "G",
+              "resnr_lig": 806,
+              "restype_lig": "G39",
+              "reschain_lig": "G",
+              "sidechain": "True",
+              "dist_h-a": 2.72,
+              "dist_d-a": 3.62,
+              "don_angle": 160.31,
+              "protisdon": "True",
+              "donoridx": 20236,
+              "donortype": "O3",
+              "acceptoridx": 23826,
+              "acceptortype": "O.co2",
+              "ligcoo": {
+                "x": -28.989,
+                "y": -120.879,
+                "z": 41.074
+              },
+              "protcoo": {
+                "x": -32.429,
+                "y": -119.847,
+                "z": 41.526
+              }
+            }
+          },
+          "salt_bridges": {
+            "salt_bridge": {
+              "resnr": 371,
+              "restype": "ARG",
+              "reschain": "G",
+              "resnr_lig": 806,
+              "restype_lig": "G39",
+              "reschain_lig": "G",
+              "dist": 3.4,
+              "protispos": "True",
+              "lig_group": "Carboxylate",
+              "lig_idx_list": {
+                "idx": {
+                  "value": 23827,
+                  "atr": {
+                    "id": "2"
+                  }
+                }
+              },
+              "ligcoo": {
+                "x": -28.908,
+                "y": -120.017,
+                "z": 41.757
+              },
+              "protcoo": {
+                "x": -27.975,
+                "y": -118.217,
+                "z": 39.028
+              }
+            }
+          }
+        },
+        "mappings": {
+          "smiles_to_pdb": "1:23842,2:23841,3:23839,4:23838,5:23836,6:23837,7:23828,8:23829,9:23830,10:23831,11:23832,12:23833,13:23834,14:23835,15:23844,16:23825,17:23826,18:23827,19:23840,20:23843"
+        }
+      }
+    },
+    "8": {
+      "has_interactions": "True",
+      "information": {
+        "identifiers": {
+          "longname": "G39",
+          "ligtype": "SMALLMOLECULE",
+          "hetid": "G39",
+          "chain": "H",
+          "position": 807,
+          "composite": "False",
+          "members": {
+            "member": {
+              "value": "G39:H:807",
+              "atr": {
+                "id": "1"
+              }
+            }
+          },
+          "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
+          "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+        },
+        "lig_properties": {
+          "num_heavy_atoms": 20,
+          "num_hbd": 4,
+          "num_unpaired_hbd": 1,
+          "num_hba": 6,
+          "num_unpaired_hba": 2,
+          "num_hal": 0,
+          "num_unpaired_hal": 0,
+          "num_aromatic_rings": 0,
+          "num_rotatable_bonds": 7,
+          "molweight": 284.35136,
+          "logp": 1.8981
+        },
+        "interacting_chains": {
+          "interacting_chain": {
+            "value": "H",
+            "atr": {
+              "id": "1"
+            }
+          }
+        },
+        "bs_residues": {
+          "bs_residue": {
+            "value": "247H",
+            "atr": {
+              "aa": "ASN",
+              "contact": "False",
+              "id": "36",
+              "min_dist": "7.3"
+            }
+          }
+        },
+        "interactions": {
+          "hydrophobic_interactions": {
+            "hydrophobic_interaction": {
+              "resnr": 276,
+              "restype": "GLU",
+              "reschain": "H",
+              "resnr_lig": 807,
+              "restype_lig": "G39",
+              "reschain_lig": "H",
+              "dist": 3.85,
+              "ligcarbonidx": 23860,
+              "protcarbonidx": 22229,
+              "ligcoo": {
+                "x": -38.733,
+                "y": -67.918,
+                "z": 80.113
+              },
+              "protcoo": {
+                "x": -42.228,
+                "y": -66.434,
+                "z": 80.757
+              }
+            }
+          },
+          "hydrogen_bonds": {
+            "hydrogen_bond": {
+              "resnr": 347,
+              "restype": "TYR",
+              "reschain": "H",
+              "resnr_lig": 807,
+              "restype_lig": "G39",
+              "reschain_lig": "H",
+              "sidechain": "True",
+              "dist_h-a": 3.49,
+              "dist_d-a": 3.89,
+              "don_angle": 107.9,
+              "protisdon": "True",
+              "donoridx": 22739,
+              "donortype": "O3",
+              "acceptoridx": 23847,
+              "acceptortype": "O.co2",
+              "ligcoo": {
+                "x": -34.381,
+                "y": -73.865,
+                "z": 81.159
+              },
+              "protcoo": {
+                "x": -32.613,
+                "y": -71.802,
+                "z": 83.938
+              }
+            }
+          },
+          "salt_bridges": {
+            "salt_bridge": {
+              "resnr": 371,
+              "restype": "ARG",
+              "reschain": "H",
+              "resnr_lig": 807,
+              "restype_lig": "G39",
+              "reschain_lig": "H",
+              "dist": 3.47,
+              "protispos": "True",
+              "lig_group": "Carboxylate",
+              "lig_idx_list": {
+                "idx": {
+                  "value": 23847,
+                  "atr": {
+                    "id": "2"
+                  }
+                }
+              },
+              "ligcoo": {
+                "x": -34.669,
+                "y": -72.945,
+                "z": 81.706
+              },
+              "protcoo": {
+                "x": -34.539,
+                "y": -75.07,
+                "z": 84.446
+              }
+            }
+          }
+        },
+        "mappings": {
+          "smiles_to_pdb": "1:23862,2:23861,3:23859,4:23858,5:23856,6:23857,7:23848,8:23849,9:23850,10:23851,11:23852,12:23853,13:23854,14:23855,15:23864,16:23845,17:23846,18:23847,19:23860,20:23863"
+        }
+      }
+    }
+  },
+  "covlinkages": {}
+}
