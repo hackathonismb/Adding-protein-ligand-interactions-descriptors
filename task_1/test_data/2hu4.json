@@ -1,1149 +1,3769 @@
 {
   "bindingsites": {
     "1": {
-      "has_interactions": "True",
-      "information": {
-        "identifiers": {
-          "longname": "G39",
-          "ligtype": "SMALLMOLECULE",
-          "hetid": "G39",
-          "chain": "A",
-          "position": 800,
-          "composite": "False",
-          "members": {
-            "member": {
-              "value": "G39:A:800",
-              "atr": {
-                "id": "1"
-              }
-            }
-          },
-          "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
-          "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+      "identifiers": {
+        "longname": "G39",
+        "ligtype": "SMALLMOLECULE",
+        "hetid": "G39",
+        "chain": "A",
+        "position": 800,
+        "composite": "False",
+        "members": {
+          "1": "G39:A:800"
         },
-        "lig_properties": {
-          "num_heavy_atoms": 20,
-          "num_hbd": 4,
-          "num_unpaired_hbd": 1,
-          "num_hba": 6,
-          "num_unpaired_hba": 2,
-          "num_hal": 0,
-          "num_unpaired_hal": 0,
-          "num_aromatic_rings": 0,
-          "num_rotatable_bonds": 7,
-          "molweight": 284.35136,
-          "logp": 1.8981
+        "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
+        "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+      },
+      "lig_properties": {
+        "num_heavy_atoms": 20,
+        "num_hbd": 4,
+        "num_unpaired_hbd": 1,
+        "num_hba": 6,
+        "num_unpaired_hba": 2,
+        "num_hal": 0,
+        "num_unpaired_hal": 0,
+        "num_aromatic_rings": 0,
+        "num_rotatable_bonds": 7,
+        "molweight": 284.35136,
+        "logp": 1.8981
+      },
+      "interacting_chains": {
+        "1": "A"
+      },
+      "bs_residues": {
+        "1": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 2.8,
+          "value": "151A"
         },
-        "interacting_chains": {
-          "interacting_chain": {
-            "value": "A",
-            "atr": {
-              "id": "1"
-            }
-          }
+        "2": {
+          "aa": "THR",
+          "contact": "False",
+          "min_dist": 6.5,
+          "value": "225A"
         },
-        "bs_residues": {
-          "bs_residue": {
-            "value": "349A",
-            "atr": {
-              "aa": "VAL",
-              "contact": "False",
-              "id": "37",
-              "min_dist": "5.5"
-            }
-          }
+        "3": {
+          "aa": "LEU",
+          "contact": "False",
+          "min_dist": 6.2,
+          "value": "134A"
         },
-        "interactions": {
-          "hydrophobic_interactions": {
-            "hydrophobic_interaction": {
-              "resnr": 294,
-              "restype": "ASN",
-              "reschain": "A",
-              "resnr_lig": 800,
-              "restype_lig": "G39",
-              "reschain_lig": "A",
-              "dist": 3.9,
-              "ligcarbonidx": 23723,
-              "protcarbonidx": 1621,
-              "ligcoo": {
-                "x": -1.01,
-                "y": 85.458,
-                "z": 108.077
-              },
-              "protcoo": {
-                "x": -3.103,
-                "y": 88.752,
-                "z": 107.978
-              }
-            }
-          },
-          "hydrogen_bonds": {
-            "hydrogen_bond": {
-              "resnr": 347,
-              "restype": "TYR",
-              "reschain": "A",
-              "resnr_lig": 800,
-              "restype_lig": "G39",
-              "reschain_lig": "A",
-              "sidechain": "True",
-              "dist_h-a": 3.38,
-              "dist_d-a": 3.86,
-              "don_angle": 114.14,
-              "protisdon": "True",
-              "donoridx": 1998,
-              "donortype": "O3",
-              "acceptoridx": 23707,
-              "acceptortype": "O.co2",
-              "ligcoo": {
-                "x": -3.554,
-                "y": 79.79,
-                "z": 111.655
-              },
-              "protcoo": {
-                "x": -4.544,
-                "y": 82.866,
-                "z": 113.762
-              }
-            }
-          },
-          "salt_bridges": {
-            "salt_bridge": {
-              "resnr": 371,
-              "restype": "ARG",
-              "reschain": "A",
-              "resnr_lig": 800,
-              "restype_lig": "G39",
-              "reschain_lig": "A",
-              "dist": 3.38,
-              "protispos": "True",
-              "lig_group": "Carboxylate",
-              "lig_idx_list": {
-                "idx": {
-                  "value": 23707,
-                  "atr": {
-                    "id": "2"
-                  }
-                }
-              },
-              "ligcoo": {
-                "x": -3.575,
-                "y": 80.871,
-                "z": 111.447
-              },
-              "protcoo": {
-                "x": -6.935,
-                "y": 80.734,
-                "z": 111.77
-              }
-            }
-          }
+        "4": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 6.8,
+          "value": "221A"
         },
-        "mappings": {
-          "smiles_to_pdb": "1:23722,2:23721,3:23719,4:23718,5:23716,6:23717,7:23708,8:23709,9:23710,10:23711,11:23712,12:23713,13:23714,14:23715,15:23724,16:23705,17:23706,18:23707,19:23720,20:23723"
+        "5": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 4.4,
+          "value": "227A"
+        },
+        "6": {
+          "aa": "ALA",
+          "contact": "False",
+          "min_dist": 7.4,
+          "value": "180A"
+        },
+        "7": {
+          "aa": "LEU",
+          "contact": "False",
+          "min_dist": 5.8,
+          "value": "223A"
+        },
+        "8": {
+          "aa": "LYS",
+          "contact": "False",
+          "min_dist": 6.4,
+          "value": "350A"
+        },
+        "9": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 3.6,
+          "value": "118A"
+        },
+        "10": {
+          "aa": "VAL",
+          "contact": "False",
+          "min_dist": 7.1,
+          "value": "149A"
+        },
+        "11": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 3.6,
+          "value": "277A"
+        },
+        "12": {
+          "aa": "GLY",
+          "contact": "False",
+          "min_dist": 6.6,
+          "value": "244A"
+        },
+        "13": {
+          "aa": "SER",
+          "contact": "False",
+          "min_dist": 3.6,
+          "value": "246A"
+        },
+        "14": {
+          "aa": "GLY",
+          "contact": "False",
+          "min_dist": 4.4,
+          "value": "348A"
+        },
+        "15": {
+          "aa": "THR",
+          "contact": "False",
+          "min_dist": 7.5,
+          "value": "242A"
+        },
+        "16": {
+          "aa": "SER",
+          "contact": "False",
+          "min_dist": 4.4,
+          "value": "179A"
+        },
+        "17": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 7.0,
+          "value": "293A"
+        },
+        "18": {
+          "aa": "HIS",
+          "contact": "False",
+          "min_dist": 5.9,
+          "value": "274A"
+        },
+        "19": {
+          "aa": "LYS",
+          "contact": "False",
+          "min_dist": 6.0,
+          "value": "150A"
+        },
+        "20": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 2.6,
+          "value": "152A"
+        },
+        "21": {
+          "aa": "ARG",
+          "contact": "False",
+          "min_dist": 4.8,
+          "value": "156A"
+        },
+        "22": {
+          "aa": "ARG",
+          "contact": "False",
+          "min_dist": 3.9,
+          "value": "224A"
+        },
+        "23": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 6.3,
+          "value": "425A"
+        },
+        "24": {
+          "aa": "TYR",
+          "contact": "False",
+          "min_dist": 2.9,
+          "value": "406A"
+        },
+        "25": {
+          "aa": "TYR",
+          "contact": "True",
+          "min_dist": 2.8,
+          "value": "347A"
+        },
+        "26": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 7.1,
+          "value": "198A"
+        },
+        "27": {
+          "aa": "GLU",
+          "contact": "True",
+          "min_dist": 2.9,
+          "value": "119A"
+        },
+        "28": {
+          "aa": "ILE",
+          "contact": "False",
+          "min_dist": 7.3,
+          "value": "194A"
+        },
+        "29": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 3.7,
+          "value": "276A"
+        },
+        "30": {
+          "aa": "ILE",
+          "contact": "False",
+          "min_dist": 4.3,
+          "value": "222A"
+        },
+        "31": {
+          "aa": "ASN",
+          "contact": "True",
+          "min_dist": 3.6,
+          "value": "294A"
+        },
+        "32": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 2.7,
+          "value": "371A"
+        },
+        "33": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 7.0,
+          "value": "247A"
+        },
+        "34": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 3.1,
+          "value": "292A"
+        },
+        "35": {
+          "aa": "TRP",
+          "contact": "True",
+          "min_dist": 3.7,
+          "value": "178A"
+        },
+        "36": {
+          "aa": "PRO",
+          "contact": "False",
+          "min_dist": 6.6,
+          "value": "245A"
+        },
+        "37": {
+          "aa": "VAL",
+          "contact": "False",
+          "min_dist": 5.5,
+          "value": "349A"
         }
+      },
+      "interactions": {
+        "hydrophobic_interactions": {
+          "1": {
+            "resnr": 178,
+            "restype": "TRP",
+            "reschain": "A",
+            "resnr_lig": 800,
+            "restype_lig": "G39",
+            "reschain_lig": "A",
+            "dist": 3.69,
+            "ligcarbonidx": 23715,
+            "protcarbonidx": 748,
+            "ligcoo": {
+              "x": 4.243,
+              "y": 80.586,
+              "z": 107.191
+            },
+            "protcoo": {
+              "x": 7.349,
+              "y": 78.863,
+              "z": 106.186
+            }
+          },
+          "2": {
+            "resnr": 294,
+            "restype": "ASN",
+            "reschain": "A",
+            "resnr_lig": 800,
+            "restype_lig": "G39",
+            "reschain_lig": "A",
+            "dist": 3.9,
+            "ligcarbonidx": 23723,
+            "protcarbonidx": 1621,
+            "ligcoo": {
+              "x": -1.01,
+              "y": 85.458,
+              "z": 108.077
+            },
+            "protcoo": {
+              "x": -3.103,
+              "y": 88.752,
+              "z": 107.978
+            }
+          }
+        },
+        "hydrogen_bonds": {
+          "1": {
+            "resnr": 119,
+            "restype": "GLU",
+            "reschain": "A",
+            "resnr_lig": 800,
+            "restype_lig": "G39",
+            "reschain_lig": "A",
+            "sidechain": "True",
+            "dist_h-a": 1.87,
+            "dist_d-a": 2.89,
+            "don_angle": 178.44,
+            "protisdon": "False",
+            "donoridx": 23724,
+            "donortype": "N3",
+            "acceptoridx": 280,
+            "acceptortype": "O3",
+            "ligcoo": {
+              "x": 0.933,
+              "y": 78.13,
+              "z": 109.177
+            },
+            "protcoo": {
+              "x": -0.737,
+              "y": 75.788,
+              "z": 108.944
+            }
+          },
+          "2": {
+            "resnr": 152,
+            "restype": "ARG",
+            "reschain": "A",
+            "resnr_lig": 800,
+            "restype_lig": "G39",
+            "reschain_lig": "A",
+            "sidechain": "True",
+            "dist_h-a": 1.92,
+            "dist_d-a": 2.65,
+            "don_angle": 128.72,
+            "protisdon": "True",
+            "donoridx": 541,
+            "donortype": "Ng+",
+            "acceptoridx": 23714,
+            "acceptortype": "O2",
+            "ligcoo": {
+              "x": 3.766,
+              "y": 80.873,
+              "z": 109.491
+            },
+            "protcoo": {
+              "x": 5.749,
+              "y": 81.66,
+              "z": 111.056
+            }
+          },
+          "3": {
+            "resnr": 347,
+            "restype": "TYR",
+            "reschain": "A",
+            "resnr_lig": 800,
+            "restype_lig": "G39",
+            "reschain_lig": "A",
+            "sidechain": "True",
+            "dist_h-a": 3.38,
+            "dist_d-a": 3.86,
+            "don_angle": 114.14,
+            "protisdon": "True",
+            "donoridx": 1998,
+            "donortype": "O3",
+            "acceptoridx": 23707,
+            "acceptortype": "O.co2",
+            "ligcoo": {
+              "x": -3.554,
+              "y": 79.79,
+              "z": 111.655
+            },
+            "protcoo": {
+              "x": -4.544,
+              "y": 82.866,
+              "z": 113.762
+            }
+          }
+        },
+        "water_bridges": null,
+        "salt_bridges": {
+          "1": {
+            "resnr": 118,
+            "restype": "ARG",
+            "reschain": "A",
+            "resnr_lig": 800,
+            "restype_lig": "G39",
+            "reschain_lig": "A",
+            "dist": 5.25,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23706,
+              "2": 23707
+            },
+            "ligcoo": {
+              "x": -3.575,
+              "y": 80.871,
+              "z": 111.447
+            },
+            "protcoo": {
+              "x": -3.549,
+              "y": 75.643,
+              "z": 110.932
+            }
+          },
+          "2": {
+            "resnr": 292,
+            "restype": "ARG",
+            "reschain": "A",
+            "resnr_lig": 800,
+            "restype_lig": "G39",
+            "reschain_lig": "A",
+            "dist": 4.59,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23706,
+              "2": 23707
+            },
+            "ligcoo": {
+              "x": -3.575,
+              "y": 80.871,
+              "z": 111.447
+            },
+            "protcoo": {
+              "x": -4.443,
+              "y": 84.219,
+              "z": 108.435
+            }
+          },
+          "3": {
+            "resnr": 371,
+            "restype": "ARG",
+            "reschain": "A",
+            "resnr_lig": 800,
+            "restype_lig": "G39",
+            "reschain_lig": "A",
+            "dist": 3.38,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23706,
+              "2": 23707
+            },
+            "ligcoo": {
+              "x": -3.575,
+              "y": 80.871,
+              "z": 111.447
+            },
+            "protcoo": {
+              "x": -6.935,
+              "y": 80.734,
+              "z": 111.77
+            }
+          }
+        },
+        "pi_stacks": null,
+        "pi_cation_interactions": null,
+        "halogen_bonds": null,
+        "metal_complexes": null
+      },
+      "mappings": {
+        "smiles_to_pdb": "1:23722,2:23721,3:23719,4:23718,5:23716,6:23717,7:23708,8:23709,9:23710,10:23711,11:23712,12:23713,13:23714,14:23715,15:23724,16:23705,17:23706,18:23707,19:23720,20:23723"
       }
     },
     "2": {
-      "has_interactions": "True",
-      "information": {
-        "identifiers": {
-          "longname": "G39",
-          "ligtype": "SMALLMOLECULE",
-          "hetid": "G39",
-          "chain": "B",
-          "position": 801,
-          "composite": "False",
-          "members": {
-            "member": {
-              "value": "G39:B:801",
-              "atr": {
-                "id": "1"
-              }
-            }
-          },
-          "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
-          "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+      "identifiers": {
+        "longname": "G39",
+        "ligtype": "SMALLMOLECULE",
+        "hetid": "G39",
+        "chain": "B",
+        "position": 801,
+        "composite": "False",
+        "members": {
+          "1": "G39:B:801"
         },
-        "lig_properties": {
-          "num_heavy_atoms": 20,
-          "num_hbd": 4,
-          "num_unpaired_hbd": 1,
-          "num_hba": 6,
-          "num_unpaired_hba": 2,
-          "num_hal": 0,
-          "num_unpaired_hal": 0,
-          "num_aromatic_rings": 0,
-          "num_rotatable_bonds": 7,
-          "molweight": 284.35136,
-          "logp": 1.8981
+        "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
+        "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+      },
+      "lig_properties": {
+        "num_heavy_atoms": 20,
+        "num_hbd": 4,
+        "num_unpaired_hbd": 1,
+        "num_hba": 6,
+        "num_unpaired_hba": 2,
+        "num_hal": 0,
+        "num_unpaired_hal": 0,
+        "num_aromatic_rings": 0,
+        "num_rotatable_bonds": 7,
+        "molweight": 284.35136,
+        "logp": 1.8981
+      },
+      "interacting_chains": {
+        "1": "B"
+      },
+      "bs_residues": {
+        "1": {
+          "aa": "THR",
+          "contact": "False",
+          "min_dist": 6.4,
+          "value": "225B"
         },
-        "interacting_chains": {
-          "interacting_chain": {
-            "value": "B",
-            "atr": {
-              "id": "1"
-            }
-          }
+        "2": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 3.1,
+          "value": "151B"
         },
-        "bs_residues": {
-          "bs_residue": {
-            "value": "245B",
-            "atr": {
-              "aa": "PRO",
-              "contact": "False",
-              "id": "37",
-              "min_dist": "6.6"
-            }
-          }
+        "3": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 6.6,
+          "value": "221B"
         },
-        "interactions": {
-          "hydrophobic_interactions": {
-            "hydrophobic_interaction": {
-              "resnr": 276,
-              "restype": "GLU",
-              "reschain": "B",
-              "resnr_lig": 801,
-              "restype_lig": "G39",
-              "reschain_lig": "B",
-              "dist": 3.82,
-              "ligcarbonidx": 23740,
-              "protcarbonidx": 4451,
-              "ligcoo": {
-                "x": 1.724,
-                "y": 15.828,
-                "z": 106.818
-              },
-              "protcoo": {
-                "x": 2.306,
-                "y": 14.013,
-                "z": 103.505
-              }
-            }
-          },
-          "hydrogen_bonds": {
-            "hydrogen_bond": {
-              "resnr": 347,
-              "restype": "TYR",
-              "reschain": "B",
-              "resnr_lig": 801,
-              "restype_lig": "G39",
-              "reschain_lig": "B",
-              "sidechain": "True",
-              "dist_h-a": 3.48,
-              "dist_d-a": 3.94,
-              "don_angle": 112.72,
-              "protisdon": "True",
-              "donoridx": 4961,
-              "donortype": "O3",
-              "acceptoridx": 23727,
-              "acceptortype": "O.co2",
-              "ligcoo": {
-                "x": 5.18,
-                "y": 20.723,
-                "z": 111.454
-              },
-              "protcoo": {
-                "x": 6.105,
-                "y": 17.537,
-                "z": 113.581
-              }
-            }
-          },
-          "salt_bridges": {
-            "salt_bridge": {
-              "resnr": 371,
-              "restype": "ARG",
-              "reschain": "B",
-              "resnr_lig": 801,
-              "restype_lig": "G39",
-              "reschain_lig": "B",
-              "dist": 3.38,
-              "protispos": "True",
-              "lig_group": "Carboxylate",
-              "lig_idx_list": {
-                "idx": {
-                  "value": 23727,
-                  "atr": {
-                    "id": "2"
-                  }
-                }
-              },
-              "ligcoo": {
-                "x": 5.24,
-                "y": 19.633,
-                "z": 111.282
-              },
-              "protcoo": {
-                "x": 8.576,
-                "y": 19.724,
-                "z": 111.82
-              }
-            }
-          }
+        "4": {
+          "aa": "ALA",
+          "contact": "False",
+          "min_dist": 7.4,
+          "value": "180B"
         },
-        "mappings": {
-          "smiles_to_pdb": "1:23742,2:23741,3:23739,4:23738,5:23736,6:23737,7:23728,8:23729,9:23730,10:23731,11:23732,12:23733,13:23734,14:23735,15:23744,16:23725,17:23726,18:23727,19:23740,20:23743"
+        "5": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 4.4,
+          "value": "227B"
+        },
+        "6": {
+          "aa": "LYS",
+          "contact": "False",
+          "min_dist": 6.4,
+          "value": "350B"
+        },
+        "7": {
+          "aa": "LEU",
+          "contact": "False",
+          "min_dist": 5.9,
+          "value": "223B"
+        },
+        "8": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 3.4,
+          "value": "118B"
+        },
+        "9": {
+          "aa": "VAL",
+          "contact": "False",
+          "min_dist": 7.0,
+          "value": "149B"
+        },
+        "10": {
+          "aa": "GLY",
+          "contact": "False",
+          "min_dist": 6.4,
+          "value": "244B"
+        },
+        "11": {
+          "aa": "SER",
+          "contact": "False",
+          "min_dist": 3.5,
+          "value": "246B"
+        },
+        "12": {
+          "aa": "SER",
+          "contact": "False",
+          "min_dist": 4.3,
+          "value": "179B"
+        },
+        "13": {
+          "aa": "THR",
+          "contact": "False",
+          "min_dist": 7.4,
+          "value": "242B"
+        },
+        "14": {
+          "aa": "GLY",
+          "contact": "False",
+          "min_dist": 4.7,
+          "value": "348B"
+        },
+        "15": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 7.3,
+          "value": "293B"
+        },
+        "16": {
+          "aa": "LYS",
+          "contact": "False",
+          "min_dist": 6.0,
+          "value": "150B"
+        },
+        "17": {
+          "aa": "HIS",
+          "contact": "False",
+          "min_dist": 6.0,
+          "value": "274B"
+        },
+        "18": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 2.9,
+          "value": "152B"
+        },
+        "19": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 3.7,
+          "value": "277B"
+        },
+        "20": {
+          "aa": "ARG",
+          "contact": "False",
+          "min_dist": 4.8,
+          "value": "156B"
+        },
+        "21": {
+          "aa": "ARG",
+          "contact": "False",
+          "min_dist": 3.8,
+          "value": "224B"
+        },
+        "22": {
+          "aa": "TYR",
+          "contact": "False",
+          "min_dist": 2.9,
+          "value": "406B"
+        },
+        "23": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 7.0,
+          "value": "198B"
+        },
+        "24": {
+          "aa": "TYR",
+          "contact": "True",
+          "min_dist": 2.8,
+          "value": "347B"
+        },
+        "25": {
+          "aa": "GLU",
+          "contact": "True",
+          "min_dist": 3.1,
+          "value": "276B"
+        },
+        "26": {
+          "aa": "ILE",
+          "contact": "False",
+          "min_dist": 7.4,
+          "value": "194B"
+        },
+        "27": {
+          "aa": "GLU",
+          "contact": "True",
+          "min_dist": 3.1,
+          "value": "119B"
+        },
+        "28": {
+          "aa": "ILE",
+          "contact": "True",
+          "min_dist": 3.9,
+          "value": "222B"
+        },
+        "29": {
+          "aa": "TRP",
+          "contact": "True",
+          "min_dist": 3.8,
+          "value": "178B"
+        },
+        "30": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 6.4,
+          "value": "425B"
+        },
+        "31": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 3.7,
+          "value": "294B"
+        },
+        "32": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 7.0,
+          "value": "247B"
+        },
+        "33": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 2.7,
+          "value": "371B"
+        },
+        "34": {
+          "aa": "LEU",
+          "contact": "False",
+          "min_dist": 6.0,
+          "value": "134B"
+        },
+        "35": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 3.0,
+          "value": "292B"
+        },
+        "36": {
+          "aa": "VAL",
+          "contact": "False",
+          "min_dist": 5.5,
+          "value": "349B"
+        },
+        "37": {
+          "aa": "PRO",
+          "contact": "False",
+          "min_dist": 6.6,
+          "value": "245B"
         }
+      },
+      "interactions": {
+        "hydrophobic_interactions": {
+          "1": {
+            "resnr": 178,
+            "restype": "TRP",
+            "reschain": "B",
+            "resnr_lig": 801,
+            "restype_lig": "G39",
+            "reschain_lig": "B",
+            "dist": 3.79,
+            "ligcarbonidx": 23735,
+            "protcarbonidx": 3711,
+            "ligcoo": {
+              "x": -2.307,
+              "y": 19.876,
+              "z": 106.577
+            },
+            "protcoo": {
+              "x": -5.461,
+              "y": 21.629,
+              "z": 105.424
+            }
+          },
+          "2": {
+            "resnr": 222,
+            "restype": "ILE",
+            "reschain": "B",
+            "resnr_lig": 801,
+            "restype_lig": "G39",
+            "reschain_lig": "B",
+            "dist": 3.94,
+            "ligcarbonidx": 23742,
+            "protcarbonidx": 4038,
+            "ligcoo": {
+              "x": -1.796,
+              "y": 15.939,
+              "z": 108.148
+            },
+            "protcoo": {
+              "x": -5.577,
+              "y": 15.008,
+              "z": 108.731
+            }
+          },
+          "3": {
+            "resnr": 276,
+            "restype": "GLU",
+            "reschain": "B",
+            "resnr_lig": 801,
+            "restype_lig": "G39",
+            "reschain_lig": "B",
+            "dist": 3.82,
+            "ligcarbonidx": 23740,
+            "protcarbonidx": 4451,
+            "ligcoo": {
+              "x": 1.724,
+              "y": 15.828,
+              "z": 106.818
+            },
+            "protcoo": {
+              "x": 2.306,
+              "y": 14.013,
+              "z": 103.505
+            }
+          }
+        },
+        "hydrogen_bonds": {
+          "1": {
+            "resnr": 119,
+            "restype": "GLU",
+            "reschain": "B",
+            "resnr_lig": 801,
+            "restype_lig": "G39",
+            "reschain_lig": "B",
+            "sidechain": "True",
+            "dist_h-a": 2.04,
+            "dist_d-a": 3.06,
+            "don_angle": 172.14,
+            "protisdon": "False",
+            "donoridx": 23744,
+            "donortype": "N3",
+            "acceptoridx": 3243,
+            "acceptortype": "O3",
+            "ligcoo": {
+              "x": 0.891,
+              "y": 22.294,
+              "z": 108.7
+            },
+            "protcoo": {
+              "x": 2.732,
+              "y": 24.736,
+              "z": 108.745
+            }
+          },
+          "2": {
+            "resnr": 152,
+            "restype": "ARG",
+            "reschain": "B",
+            "resnr_lig": 801,
+            "restype_lig": "G39",
+            "reschain_lig": "B",
+            "sidechain": "True",
+            "dist_h-a": 2.07,
+            "dist_d-a": 2.86,
+            "don_angle": 135.88,
+            "protisdon": "True",
+            "donoridx": 3504,
+            "donortype": "Ng+",
+            "acceptoridx": 23734,
+            "acceptortype": "O2",
+            "ligcoo": {
+              "x": -1.953,
+              "y": 19.75,
+              "z": 108.905
+            },
+            "protcoo": {
+              "x": -4.181,
+              "y": 18.797,
+              "z": 110.419
+            }
+          },
+          "3": {
+            "resnr": 347,
+            "restype": "TYR",
+            "reschain": "B",
+            "resnr_lig": 801,
+            "restype_lig": "G39",
+            "reschain_lig": "B",
+            "sidechain": "True",
+            "dist_h-a": 3.48,
+            "dist_d-a": 3.94,
+            "don_angle": 112.72,
+            "protisdon": "True",
+            "donoridx": 4961,
+            "donortype": "O3",
+            "acceptoridx": 23727,
+            "acceptortype": "O.co2",
+            "ligcoo": {
+              "x": 5.18,
+              "y": 20.723,
+              "z": 111.454
+            },
+            "protcoo": {
+              "x": 6.105,
+              "y": 17.537,
+              "z": 113.581
+            }
+          }
+        },
+        "water_bridges": null,
+        "salt_bridges": {
+          "1": {
+            "resnr": 118,
+            "restype": "ARG",
+            "reschain": "B",
+            "resnr_lig": 801,
+            "restype_lig": "G39",
+            "reschain_lig": "B",
+            "dist": 5.17,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23726,
+              "2": 23727
+            },
+            "ligcoo": {
+              "x": 5.24,
+              "y": 19.633,
+              "z": 111.282
+            },
+            "protcoo": {
+              "x": 5.351,
+              "y": 24.782,
+              "z": 110.855
+            }
+          },
+          "2": {
+            "resnr": 292,
+            "restype": "ARG",
+            "reschain": "B",
+            "resnr_lig": 801,
+            "restype_lig": "G39",
+            "reschain_lig": "B",
+            "dist": 4.52,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23726,
+              "2": 23727
+            },
+            "ligcoo": {
+              "x": 5.24,
+              "y": 19.633,
+              "z": 111.282
+            },
+            "protcoo": {
+              "x": 6.4,
+              "y": 16.421,
+              "z": 108.322
+            }
+          },
+          "3": {
+            "resnr": 371,
+            "restype": "ARG",
+            "reschain": "B",
+            "resnr_lig": 801,
+            "restype_lig": "G39",
+            "reschain_lig": "B",
+            "dist": 3.38,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23726,
+              "2": 23727
+            },
+            "ligcoo": {
+              "x": 5.24,
+              "y": 19.633,
+              "z": 111.282
+            },
+            "protcoo": {
+              "x": 8.576,
+              "y": 19.724,
+              "z": 111.82
+            }
+          }
+        },
+        "pi_stacks": null,
+        "pi_cation_interactions": null,
+        "halogen_bonds": null,
+        "metal_complexes": null
+      },
+      "mappings": {
+        "smiles_to_pdb": "1:23742,2:23741,3:23739,4:23738,5:23736,6:23737,7:23728,8:23729,9:23730,10:23731,11:23732,12:23733,13:23734,14:23735,15:23744,16:23725,17:23726,18:23727,19:23740,20:23743"
       }
     },
     "3": {
-      "has_interactions": "True",
-      "information": {
-        "identifiers": {
-          "longname": "G39",
-          "ligtype": "SMALLMOLECULE",
-          "hetid": "G39",
-          "chain": "C",
-          "position": 802,
-          "composite": "False",
-          "members": {
-            "member": {
-              "value": "G39:C:802",
-              "atr": {
-                "id": "1"
-              }
-            }
-          },
-          "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
-          "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+      "identifiers": {
+        "longname": "G39",
+        "ligtype": "SMALLMOLECULE",
+        "hetid": "G39",
+        "chain": "C",
+        "position": 802,
+        "composite": "False",
+        "members": {
+          "1": "G39:C:802"
         },
-        "lig_properties": {
-          "num_heavy_atoms": 20,
-          "num_hbd": 4,
-          "num_unpaired_hbd": 1,
-          "num_hba": 6,
-          "num_unpaired_hba": 2,
-          "num_hal": 0,
-          "num_unpaired_hal": 0,
-          "num_aromatic_rings": 0,
-          "num_rotatable_bonds": 7,
-          "molweight": 284.35136,
-          "logp": 1.8981
+        "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
+        "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+      },
+      "lig_properties": {
+        "num_heavy_atoms": 20,
+        "num_hbd": 4,
+        "num_unpaired_hbd": 1,
+        "num_hba": 6,
+        "num_unpaired_hba": 2,
+        "num_hal": 0,
+        "num_unpaired_hal": 0,
+        "num_aromatic_rings": 0,
+        "num_rotatable_bonds": 7,
+        "molweight": 284.35136,
+        "logp": 1.8981
+      },
+      "interacting_chains": {
+        "1": "C"
+      },
+      "bs_residues": {
+        "1": {
+          "aa": "THR",
+          "contact": "False",
+          "min_dist": 6.4,
+          "value": "225C"
         },
-        "interacting_chains": {
-          "interacting_chain": {
-            "value": "C",
-            "atr": {
-              "id": "1"
-            }
-          }
+        "2": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 2.7,
+          "value": "151C"
         },
-        "bs_residues": {
-          "bs_residue": {
-            "value": "245C",
-            "atr": {
-              "aa": "PRO",
-              "contact": "False",
-              "id": "37",
-              "min_dist": "6.5"
-            }
-          }
+        "3": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 6.6,
+          "value": "221C"
         },
-        "interactions": {
-          "hydrophobic_interactions": {
-            "hydrophobic_interaction": {
-              "resnr": 276,
-              "restype": "GLU",
-              "reschain": "C",
-              "resnr_lig": 802,
-              "restype_lig": "G39",
-              "reschain_lig": "C",
-              "dist": 3.84,
-              "ligcarbonidx": 23760,
-              "protcarbonidx": 7414,
-              "ligcoo": {
-                "x": -33.545,
-                "y": 49.377,
-                "z": 105.994
-              },
-              "protcoo": {
-                "x": -34.951,
-                "y": 48.994,
-                "z": 102.44
-              }
-            }
-          },
-          "hydrogen_bonds": {
-            "hydrogen_bond": {
-              "resnr": 347,
-              "restype": "TYR",
-              "reschain": "C",
-              "resnr_lig": 802,
-              "restype_lig": "G39",
-              "reschain_lig": "C",
-              "sidechain": "True",
-              "dist_h-a": 2.67,
-              "dist_d-a": 3.06,
-              "don_angle": 106.15,
-              "protisdon": "True",
-              "donoridx": 7924,
-              "donortype": "O3",
-              "acceptoridx": 23746,
-              "acceptortype": "O.co2",
-              "ligcoo": {
-                "x": -30.837,
-                "y": 45.658,
-                "z": 110.022
-              },
-              "protcoo": {
-                "x": -31.995,
-                "y": 44.862,
-                "z": 112.743
-              }
-            }
-          },
-          "salt_bridges": {
-            "salt_bridge": {
-              "resnr": 371,
-              "restype": "ARG",
-              "reschain": "C",
-              "resnr_lig": 802,
-              "restype_lig": "G39",
-              "reschain_lig": "C",
-              "dist": 3.54,
-              "protispos": "True",
-              "lig_group": "Carboxylate",
-              "lig_idx_list": {
-                "idx": {
-                  "value": 23747,
-                  "atr": {
-                    "id": "2"
-                  }
-                }
-              },
-              "ligcoo": {
-                "x": -29.761,
-                "y": 45.716,
-                "z": 110.238
-              },
-              "protcoo": {
-                "x": -29.643,
-                "y": 42.261,
-                "z": 111.001
-              }
-            }
-          }
+        "4": {
+          "aa": "ALA",
+          "contact": "False",
+          "min_dist": 7.4,
+          "value": "180C"
         },
-        "mappings": {
-          "smiles_to_pdb": "1:23762,2:23761,3:23759,4:23758,5:23756,6:23757,7:23748,8:23749,9:23750,10:23751,11:23752,12:23753,13:23754,14:23755,15:23764,16:23745,17:23746,18:23747,19:23760,20:23763"
+        "5": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 4.3,
+          "value": "227C"
+        },
+        "6": {
+          "aa": "LEU",
+          "contact": "False",
+          "min_dist": 5.8,
+          "value": "223C"
+        },
+        "7": {
+          "aa": "LYS",
+          "contact": "False",
+          "min_dist": 6.2,
+          "value": "350C"
+        },
+        "8": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 3.4,
+          "value": "118C"
+        },
+        "9": {
+          "aa": "VAL",
+          "contact": "False",
+          "min_dist": 7.2,
+          "value": "149C"
+        },
+        "10": {
+          "aa": "GLY",
+          "contact": "False",
+          "min_dist": 6.4,
+          "value": "244C"
+        },
+        "11": {
+          "aa": "SER",
+          "contact": "False",
+          "min_dist": 3.5,
+          "value": "246C"
+        },
+        "12": {
+          "aa": "SER",
+          "contact": "False",
+          "min_dist": 4.4,
+          "value": "179C"
+        },
+        "13": {
+          "aa": "GLY",
+          "contact": "False",
+          "min_dist": 4.4,
+          "value": "348C"
+        },
+        "14": {
+          "aa": "THR",
+          "contact": "False",
+          "min_dist": 7.2,
+          "value": "242C"
+        },
+        "15": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 7.1,
+          "value": "293C"
+        },
+        "16": {
+          "aa": "TYR",
+          "contact": "False",
+          "min_dist": 2.9,
+          "value": "406C"
+        },
+        "17": {
+          "aa": "LYS",
+          "contact": "False",
+          "min_dist": 5.8,
+          "value": "150C"
+        },
+        "18": {
+          "aa": "HIS",
+          "contact": "False",
+          "min_dist": 5.9,
+          "value": "274C"
+        },
+        "19": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 2.9,
+          "value": "152C"
+        },
+        "20": {
+          "aa": "ARG",
+          "contact": "False",
+          "min_dist": 4.8,
+          "value": "156C"
+        },
+        "21": {
+          "aa": "ARG",
+          "contact": "False",
+          "min_dist": 3.7,
+          "value": "224C"
+        },
+        "22": {
+          "aa": "GLU",
+          "contact": "True",
+          "min_dist": 3.4,
+          "value": "276C"
+        },
+        "23": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 7.0,
+          "value": "198C"
+        },
+        "24": {
+          "aa": "TYR",
+          "contact": "True",
+          "min_dist": 3.1,
+          "value": "347C"
+        },
+        "25": {
+          "aa": "ILE",
+          "contact": "False",
+          "min_dist": 7.3,
+          "value": "194C"
+        },
+        "26": {
+          "aa": "GLU",
+          "contact": "True",
+          "min_dist": 3.1,
+          "value": "119C"
+        },
+        "27": {
+          "aa": "ILE",
+          "contact": "False",
+          "min_dist": 4.0,
+          "value": "222C"
+        },
+        "28": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 6.3,
+          "value": "425C"
+        },
+        "29": {
+          "aa": "LEU",
+          "contact": "False",
+          "min_dist": 6.1,
+          "value": "134C"
+        },
+        "30": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 3.6,
+          "value": "277C"
+        },
+        "31": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 3.6,
+          "value": "294C"
+        },
+        "32": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 6.9,
+          "value": "247C"
+        },
+        "33": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 2.9,
+          "value": "371C"
+        },
+        "34": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 3.0,
+          "value": "292C"
+        },
+        "35": {
+          "aa": "TRP",
+          "contact": "True",
+          "min_dist": 3.6,
+          "value": "178C"
+        },
+        "36": {
+          "aa": "VAL",
+          "contact": "False",
+          "min_dist": 5.5,
+          "value": "349C"
+        },
+        "37": {
+          "aa": "PRO",
+          "contact": "False",
+          "min_dist": 6.5,
+          "value": "245C"
         }
+      },
+      "interactions": {
+        "hydrophobic_interactions": {
+          "1": {
+            "resnr": 178,
+            "restype": "TRP",
+            "reschain": "C",
+            "resnr_lig": 802,
+            "restype_lig": "G39",
+            "reschain_lig": "C",
+            "dist": 3.61,
+            "ligcarbonidx": 23755,
+            "protcarbonidx": 6676,
+            "ligcoo": {
+              "x": -29.393,
+              "y": 53.55,
+              "z": 106.055
+            },
+            "protcoo": {
+              "x": -28.866,
+              "y": 56.812,
+              "z": 104.606
+            }
+          },
+          "2": {
+            "resnr": 276,
+            "restype": "GLU",
+            "reschain": "C",
+            "resnr_lig": 802,
+            "restype_lig": "G39",
+            "reschain_lig": "C",
+            "dist": 3.84,
+            "ligcarbonidx": 23760,
+            "protcarbonidx": 7414,
+            "ligcoo": {
+              "x": -33.545,
+              "y": 49.377,
+              "z": 105.994
+            },
+            "protcoo": {
+              "x": -34.951,
+              "y": 48.994,
+              "z": 102.44
+            }
+          }
+        },
+        "hydrogen_bonds": {
+          "1": {
+            "resnr": 119,
+            "restype": "GLU",
+            "reschain": "C",
+            "resnr_lig": 802,
+            "restype_lig": "G39",
+            "reschain_lig": "C",
+            "sidechain": "True",
+            "dist_h-a": 2.12,
+            "dist_d-a": 3.13,
+            "don_angle": 171.96,
+            "protisdon": "False",
+            "donoridx": 23764,
+            "donortype": "N3",
+            "acceptoridx": 6206,
+            "acceptortype": "O3",
+            "ligcoo": {
+              "x": -27.103,
+              "y": 50.278,
+              "z": 108.093
+            },
+            "protcoo": {
+              "x": -24.538,
+              "y": 48.48,
+              "z": 108.126
+            }
+          },
+          "2": {
+            "resnr": 152,
+            "restype": "ARG",
+            "reschain": "C",
+            "resnr_lig": 802,
+            "restype_lig": "G39",
+            "reschain_lig": "C",
+            "sidechain": "True",
+            "dist_h-a": 2.09,
+            "dist_d-a": 2.91,
+            "don_angle": 140.38,
+            "protisdon": "True",
+            "donoridx": 6467,
+            "donortype": "Ng+",
+            "acceptoridx": 23754,
+            "acceptortype": "O2",
+            "ligcoo": {
+              "x": -29.331,
+              "y": 53.109,
+              "z": 108.375
+            },
+            "protcoo": {
+              "x": -30.476,
+              "y": 55.204,
+              "z": 110.045
+            }
+          },
+          "3": {
+            "resnr": 347,
+            "restype": "TYR",
+            "reschain": "C",
+            "resnr_lig": 802,
+            "restype_lig": "G39",
+            "reschain_lig": "C",
+            "sidechain": "True",
+            "dist_h-a": 2.67,
+            "dist_d-a": 3.06,
+            "don_angle": 106.15,
+            "protisdon": "True",
+            "donoridx": 7924,
+            "donortype": "O3",
+            "acceptoridx": 23746,
+            "acceptortype": "O.co2",
+            "ligcoo": {
+              "x": -30.837,
+              "y": 45.658,
+              "z": 110.022
+            },
+            "protcoo": {
+              "x": -31.995,
+              "y": 44.862,
+              "z": 112.743
+            }
+          }
+        },
+        "water_bridges": null,
+        "salt_bridges": {
+          "1": {
+            "resnr": 118,
+            "restype": "ARG",
+            "reschain": "C",
+            "resnr_lig": 802,
+            "restype_lig": "G39",
+            "reschain_lig": "C",
+            "dist": 5.17,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23746,
+              "2": 23747
+            },
+            "ligcoo": {
+              "x": -29.761,
+              "y": 45.716,
+              "z": 110.238
+            },
+            "protcoo": {
+              "x": -24.591,
+              "y": 45.8,
+              "z": 110.173
+            }
+          },
+          "2": {
+            "resnr": 292,
+            "restype": "ARG",
+            "reschain": "C",
+            "resnr_lig": 802,
+            "restype_lig": "G39",
+            "reschain_lig": "C",
+            "dist": 4.53,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23746,
+              "2": 23747
+            },
+            "ligcoo": {
+              "x": -29.761,
+              "y": 45.716,
+              "z": 110.238
+            },
+            "protcoo": {
+              "x": -33.04,
+              "y": 44.696,
+              "z": 107.291
+            }
+          },
+          "3": {
+            "resnr": 371,
+            "restype": "ARG",
+            "reschain": "C",
+            "resnr_lig": 802,
+            "restype_lig": "G39",
+            "reschain_lig": "C",
+            "dist": 3.54,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23746,
+              "2": 23747
+            },
+            "ligcoo": {
+              "x": -29.761,
+              "y": 45.716,
+              "z": 110.238
+            },
+            "protcoo": {
+              "x": -29.643,
+              "y": 42.261,
+              "z": 111.001
+            }
+          }
+        },
+        "pi_stacks": null,
+        "pi_cation_interactions": null,
+        "halogen_bonds": null,
+        "metal_complexes": null
+      },
+      "mappings": {
+        "smiles_to_pdb": "1:23762,2:23761,3:23759,4:23758,5:23756,6:23757,7:23748,8:23749,9:23750,10:23751,11:23752,12:23753,13:23754,14:23755,15:23764,16:23745,17:23746,18:23747,19:23760,20:23763"
       }
     },
     "4": {
-      "has_interactions": "True",
-      "information": {
-        "identifiers": {
-          "longname": "G39",
-          "ligtype": "SMALLMOLECULE",
-          "hetid": "G39",
-          "chain": "D",
-          "position": 803,
-          "composite": "False",
-          "members": {
-            "member": {
-              "value": "G39:D:803",
-              "atr": {
-                "id": "1"
-              }
-            }
-          },
-          "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
-          "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+      "identifiers": {
+        "longname": "G39",
+        "ligtype": "SMALLMOLECULE",
+        "hetid": "G39",
+        "chain": "D",
+        "position": 803,
+        "composite": "False",
+        "members": {
+          "1": "G39:D:803"
         },
-        "lig_properties": {
-          "num_heavy_atoms": 20,
-          "num_hbd": 4,
-          "num_unpaired_hbd": 1,
-          "num_hba": 6,
-          "num_unpaired_hba": 2,
-          "num_hal": 0,
-          "num_unpaired_hal": 0,
-          "num_aromatic_rings": 0,
-          "num_rotatable_bonds": 7,
-          "molweight": 284.35136,
-          "logp": 1.8981
+        "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
+        "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+      },
+      "lig_properties": {
+        "num_heavy_atoms": 20,
+        "num_hbd": 4,
+        "num_unpaired_hbd": 1,
+        "num_hba": 6,
+        "num_unpaired_hba": 2,
+        "num_hal": 0,
+        "num_unpaired_hal": 0,
+        "num_aromatic_rings": 0,
+        "num_rotatable_bonds": 7,
+        "molweight": 284.35136,
+        "logp": 1.8981
+      },
+      "interacting_chains": {
+        "1": "D"
+      },
+      "bs_residues": {
+        "1": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 3.8,
+          "value": "277D"
         },
-        "interacting_chains": {
-          "interacting_chain": {
-            "value": "D",
-            "atr": {
-              "id": "1"
-            }
-          }
+        "2": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 3.0,
+          "value": "151D"
         },
-        "bs_residues": {
-          "bs_residue": {
-            "value": "292D",
-            "atr": {
-              "aa": "ARG",
-              "contact": "True",
-              "id": "37",
-              "min_dist": "3.1"
-            }
-          }
+        "3": {
+          "aa": "THR",
+          "contact": "False",
+          "min_dist": 6.5,
+          "value": "225D"
         },
-        "interactions": {
-          "hydrophobic_interactions": {
-            "hydrophobic_interaction": {
-              "resnr": 276,
-              "restype": "GLU",
-              "reschain": "D",
-              "resnr_lig": 803,
-              "restype_lig": "G39",
-              "reschain_lig": "D",
-              "dist": 3.68,
-              "ligcarbonidx": 23780,
-              "protcarbonidx": 10377,
-              "ligcoo": {
-                "x": 35.252,
-                "y": 51.251,
-                "z": 108.227
-              },
-              "protcoo": {
-                "x": 37.128,
-                "y": 51.527,
-                "z": 105.076
-              }
-            }
-          },
-          "hydrogen_bonds": {
-            "hydrogen_bond": {
-              "resnr": 347,
-              "restype": "TYR",
-              "reschain": "D",
-              "resnr_lig": 803,
-              "restype_lig": "G39",
-              "reschain_lig": "D",
-              "sidechain": "True",
-              "dist_h-a": 2.75,
-              "dist_d-a": 3.11,
-              "don_angle": 104.11,
-              "protisdon": "True",
-              "donoridx": 10887,
-              "donortype": "O3",
-              "acceptoridx": 23766,
-              "acceptortype": "O.co2",
-              "ligcoo": {
-                "x": 32.363,
-                "y": 54.65,
-                "z": 112.252
-              },
-              "protcoo": {
-                "x": 33.416,
-                "y": 55.682,
-                "z": 114.994
-              }
-            }
-          },
-          "salt_bridges": {
-            "salt_bridge": {
-              "resnr": 371,
-              "restype": "ARG",
-              "reschain": "D",
-              "resnr_lig": 803,
-              "restype_lig": "G39",
-              "reschain_lig": "D",
-              "dist": 3.39,
-              "protispos": "True",
-              "lig_group": "Carboxylate",
-              "lig_idx_list": {
-                "idx": {
-                  "value": 23767,
-                  "atr": {
-                    "id": "2"
-                  }
-                }
-              },
-              "ligcoo": {
-                "x": 31.277,
-                "y": 54.603,
-                "z": 112.448
-              },
-              "protcoo": {
-                "x": 31.024,
-                "y": 57.94,
-                "z": 112.981
-              }
-            }
-          }
+        "4": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 4.4,
+          "value": "227D"
         },
-        "mappings": {
-          "smiles_to_pdb": "1:23782,2:23781,3:23779,4:23778,5:23776,6:23777,7:23768,8:23769,9:23770,10:23771,11:23772,12:23773,13:23774,14:23775,15:23784,16:23765,17:23766,18:23767,19:23780,20:23783"
+        "5": {
+          "aa": "ALA",
+          "contact": "False",
+          "min_dist": 7.4,
+          "value": "180D"
+        },
+        "6": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 6.5,
+          "value": "221D"
+        },
+        "7": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 3.5,
+          "value": "118D"
+        },
+        "8": {
+          "aa": "LYS",
+          "contact": "False",
+          "min_dist": 6.4,
+          "value": "350D"
+        },
+        "9": {
+          "aa": "LEU",
+          "contact": "False",
+          "min_dist": 5.7,
+          "value": "223D"
+        },
+        "10": {
+          "aa": "VAL",
+          "contact": "False",
+          "min_dist": 6.8,
+          "value": "149D"
+        },
+        "11": {
+          "aa": "SER",
+          "contact": "False",
+          "min_dist": 3.6,
+          "value": "246D"
+        },
+        "12": {
+          "aa": "GLY",
+          "contact": "False",
+          "min_dist": 6.4,
+          "value": "244D"
+        },
+        "13": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 7.2,
+          "value": "293D"
+        },
+        "14": {
+          "aa": "THR",
+          "contact": "False",
+          "min_dist": 7.4,
+          "value": "242D"
+        },
+        "15": {
+          "aa": "GLY",
+          "contact": "False",
+          "min_dist": 4.4,
+          "value": "348D"
+        },
+        "16": {
+          "aa": "SER",
+          "contact": "False",
+          "min_dist": 4.4,
+          "value": "179D"
+        },
+        "17": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 2.9,
+          "value": "152D"
+        },
+        "18": {
+          "aa": "HIS",
+          "contact": "False",
+          "min_dist": 6.1,
+          "value": "274D"
+        },
+        "19": {
+          "aa": "LYS",
+          "contact": "False",
+          "min_dist": 6.0,
+          "value": "150D"
+        },
+        "20": {
+          "aa": "ARG",
+          "contact": "False",
+          "min_dist": 3.6,
+          "value": "224D"
+        },
+        "21": {
+          "aa": "ARG",
+          "contact": "False",
+          "min_dist": 4.7,
+          "value": "156D"
+        },
+        "22": {
+          "aa": "TYR",
+          "contact": "True",
+          "min_dist": 3.1,
+          "value": "347D"
+        },
+        "23": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 7.1,
+          "value": "198D"
+        },
+        "24": {
+          "aa": "TYR",
+          "contact": "False",
+          "min_dist": 2.9,
+          "value": "406D"
+        },
+        "25": {
+          "aa": "ILE",
+          "contact": "False",
+          "min_dist": 4.1,
+          "value": "222D"
+        },
+        "26": {
+          "aa": "GLU",
+          "contact": "True",
+          "min_dist": 3.1,
+          "value": "119D"
+        },
+        "27": {
+          "aa": "ILE",
+          "contact": "False",
+          "min_dist": 7.4,
+          "value": "194D"
+        },
+        "28": {
+          "aa": "LEU",
+          "contact": "False",
+          "min_dist": 5.8,
+          "value": "134D"
+        },
+        "29": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 3.8,
+          "value": "294D"
+        },
+        "30": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 6.4,
+          "value": "425D"
+        },
+        "31": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 2.7,
+          "value": "371D"
+        },
+        "32": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 7.1,
+          "value": "247D"
+        },
+        "33": {
+          "aa": "PRO",
+          "contact": "False",
+          "min_dist": 6.6,
+          "value": "245D"
+        },
+        "34": {
+          "aa": "VAL",
+          "contact": "False",
+          "min_dist": 5.5,
+          "value": "349D"
+        },
+        "35": {
+          "aa": "GLU",
+          "contact": "True",
+          "min_dist": 3.3,
+          "value": "276D"
+        },
+        "36": {
+          "aa": "TRP",
+          "contact": "True",
+          "min_dist": 3.7,
+          "value": "178D"
+        },
+        "37": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 3.1,
+          "value": "292D"
         }
+      },
+      "interactions": {
+        "hydrophobic_interactions": {
+          "1": {
+            "resnr": 178,
+            "restype": "TRP",
+            "reschain": "D",
+            "resnr_lig": 803,
+            "restype_lig": "G39",
+            "reschain_lig": "D",
+            "dist": 3.73,
+            "ligcarbonidx": 23775,
+            "protcarbonidx": 9637,
+            "ligcoo": {
+              "x": 31.226,
+              "y": 46.898,
+              "z": 108.041
+            },
+            "protcoo": {
+              "x": 29.569,
+              "y": 43.766,
+              "z": 106.886
+            }
+          },
+          "2": {
+            "resnr": 276,
+            "restype": "GLU",
+            "reschain": "D",
+            "resnr_lig": 803,
+            "restype_lig": "G39",
+            "reschain_lig": "D",
+            "dist": 3.68,
+            "ligcarbonidx": 23780,
+            "protcarbonidx": 10377,
+            "ligcoo": {
+              "x": 35.252,
+              "y": 51.251,
+              "z": 108.227
+            },
+            "protcoo": {
+              "x": 37.128,
+              "y": 51.527,
+              "z": 105.076
+            }
+          }
+        },
+        "hydrogen_bonds": {
+          "1": {
+            "resnr": 119,
+            "restype": "GLU",
+            "reschain": "D",
+            "resnr_lig": 803,
+            "restype_lig": "G39",
+            "reschain_lig": "D",
+            "sidechain": "True",
+            "dist_h-a": 2.1,
+            "dist_d-a": 3.11,
+            "don_angle": 168.57,
+            "protisdon": "False",
+            "donoridx": 23784,
+            "donortype": "N3",
+            "acceptoridx": 9169,
+            "acceptortype": "O3",
+            "ligcoo": {
+              "x": 28.662,
+              "y": 50.111,
+              "z": 110.053
+            },
+            "protcoo": {
+              "x": 26.316,
+              "y": 52.141,
+              "z": 109.837
+            }
+          },
+          "2": {
+            "resnr": 152,
+            "restype": "ARG",
+            "reschain": "D",
+            "resnr_lig": 803,
+            "restype_lig": "G39",
+            "reschain_lig": "D",
+            "sidechain": "True",
+            "dist_h-a": 2.16,
+            "dist_d-a": 2.95,
+            "don_angle": 136.22,
+            "protisdon": "True",
+            "donoridx": 9430,
+            "donortype": "Ng+",
+            "acceptoridx": 23774,
+            "acceptortype": "O2",
+            "ligcoo": {
+              "x": 31.371,
+              "y": 47.369,
+              "z": 110.356
+            },
+            "protcoo": {
+              "x": 32.24,
+              "y": 45.009,
+              "z": 111.892
+            }
+          },
+          "3": {
+            "resnr": 347,
+            "restype": "TYR",
+            "reschain": "D",
+            "resnr_lig": 803,
+            "restype_lig": "G39",
+            "reschain_lig": "D",
+            "sidechain": "True",
+            "dist_h-a": 2.75,
+            "dist_d-a": 3.11,
+            "don_angle": 104.11,
+            "protisdon": "True",
+            "donoridx": 10887,
+            "donortype": "O3",
+            "acceptoridx": 23766,
+            "acceptortype": "O.co2",
+            "ligcoo": {
+              "x": 32.363,
+              "y": 54.65,
+              "z": 112.252
+            },
+            "protcoo": {
+              "x": 33.416,
+              "y": 55.682,
+              "z": 114.994
+            }
+          }
+        },
+        "water_bridges": null,
+        "salt_bridges": {
+          "1": {
+            "resnr": 118,
+            "restype": "ARG",
+            "reschain": "D",
+            "resnr_lig": 803,
+            "restype_lig": "G39",
+            "reschain_lig": "D",
+            "dist": 5.07,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23766,
+              "2": 23767
+            },
+            "ligcoo": {
+              "x": 31.277,
+              "y": 54.603,
+              "z": 112.448
+            },
+            "protcoo": {
+              "x": 26.235,
+              "y": 54.603,
+              "z": 111.967
+            }
+          },
+          "2": {
+            "resnr": 292,
+            "restype": "ARG",
+            "reschain": "D",
+            "resnr_lig": 803,
+            "restype_lig": "G39",
+            "reschain_lig": "D",
+            "dist": 4.61,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23766,
+              "2": 23767
+            },
+            "ligcoo": {
+              "x": 31.277,
+              "y": 54.603,
+              "z": 112.448
+            },
+            "protcoo": {
+              "x": 34.909,
+              "y": 55.613,
+              "z": 109.797
+            }
+          },
+          "3": {
+            "resnr": 371,
+            "restype": "ARG",
+            "reschain": "D",
+            "resnr_lig": 803,
+            "restype_lig": "G39",
+            "reschain_lig": "D",
+            "dist": 3.39,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23766,
+              "2": 23767
+            },
+            "ligcoo": {
+              "x": 31.277,
+              "y": 54.603,
+              "z": 112.448
+            },
+            "protcoo": {
+              "x": 31.024,
+              "y": 57.94,
+              "z": 112.981
+            }
+          }
+        },
+        "pi_stacks": null,
+        "pi_cation_interactions": null,
+        "halogen_bonds": null,
+        "metal_complexes": null
+      },
+      "mappings": {
+        "smiles_to_pdb": "1:23782,2:23781,3:23779,4:23778,5:23776,6:23777,7:23768,8:23769,9:23770,10:23771,11:23772,12:23773,13:23774,14:23775,15:23784,16:23765,17:23766,18:23767,19:23780,20:23783"
       }
     },
     "5": {
-      "has_interactions": "True",
-      "information": {
-        "identifiers": {
-          "longname": "G39",
-          "ligtype": "SMALLMOLECULE",
-          "hetid": "G39",
-          "chain": "E",
-          "position": 804,
-          "composite": "False",
-          "members": {
-            "member": {
-              "value": "G39:E:804",
-              "atr": {
-                "id": "1"
-              }
-            }
-          },
-          "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
-          "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+      "identifiers": {
+        "longname": "G39",
+        "ligtype": "SMALLMOLECULE",
+        "hetid": "G39",
+        "chain": "E",
+        "position": 804,
+        "composite": "False",
+        "members": {
+          "1": "G39:E:804"
         },
-        "lig_properties": {
-          "num_heavy_atoms": 20,
-          "num_hbd": 4,
-          "num_unpaired_hbd": 1,
-          "num_hba": 6,
-          "num_unpaired_hba": 2,
-          "num_hal": 0,
-          "num_unpaired_hal": 0,
-          "num_aromatic_rings": 0,
-          "num_rotatable_bonds": 7,
-          "molweight": 284.35136,
-          "logp": 1.8981
+        "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
+        "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+      },
+      "lig_properties": {
+        "num_heavy_atoms": 20,
+        "num_hbd": 4,
+        "num_unpaired_hbd": 1,
+        "num_hba": 6,
+        "num_unpaired_hba": 2,
+        "num_hal": 0,
+        "num_unpaired_hal": 0,
+        "num_aromatic_rings": 0,
+        "num_rotatable_bonds": 7,
+        "molweight": 284.35136,
+        "logp": 1.8981
+      },
+      "interacting_chains": {
+        "1": "E"
+      },
+      "bs_residues": {
+        "1": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 2.9,
+          "value": "151E"
         },
-        "interacting_chains": {
-          "interacting_chain": {
-            "value": "E",
-            "atr": {
-              "id": "1"
-            }
-          }
+        "2": {
+          "aa": "THR",
+          "contact": "False",
+          "min_dist": 6.4,
+          "value": "225E"
         },
-        "bs_residues": {
-          "bs_residue": {
-            "value": "178E",
-            "atr": {
-              "aa": "TRP",
-              "contact": "True",
-              "id": "35",
-              "min_dist": "3.9"
-            }
-          }
+        "3": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 4.2,
+          "value": "227E"
         },
-        "interactions": {
-          "hydrophobic_interactions": {
-            "hydrophobic_interaction": {
-              "resnr": 276,
-              "restype": "GLU",
-              "reschain": "E",
-              "resnr_lig": 804,
-              "restype_lig": "G39",
-              "reschain_lig": "E",
-              "dist": 3.65,
-              "ligcarbonidx": 23800,
-              "protcarbonidx": 13340,
-              "ligcoo": {
-                "x": -40.496,
-                "y": -116.0,
-                "z": 89.343
-              },
-              "protcoo": {
-                "x": -43.895,
-                "y": -117.154,
-                "z": 90.016
-              }
-            }
-          },
-          "hydrogen_bonds": {
-            "hydrogen_bond": {
-              "resnr": 152,
-              "restype": "ARG",
-              "reschain": "E",
-              "resnr_lig": 804,
-              "restype_lig": "G39",
-              "reschain_lig": "E",
-              "sidechain": "True",
-              "dist_h-a": 2.03,
-              "dist_d-a": 2.77,
-              "don_angle": 129.86,
-              "protisdon": "True",
-              "donoridx": 12393,
-              "donortype": "Ng+",
-              "acceptoridx": 23794,
-              "acceptortype": "O2",
-              "ligcoo": {
-                "x": -38.151,
-                "y": -110.71,
-                "z": 88.27
-              },
-              "protcoo": {
-                "x": -37.086,
-                "y": -109.446,
-                "z": 90.494
-              }
-            }
-          },
-          "salt_bridges": {
-            "salt_bridge": {
-              "resnr": 371,
-              "restype": "ARG",
-              "reschain": "E",
-              "resnr_lig": 804,
-              "restype_lig": "G39",
-              "reschain_lig": "E",
-              "dist": 3.5,
-              "protispos": "True",
-              "lig_group": "Carboxylate",
-              "lig_idx_list": {
-                "idx": {
-                  "value": 23787,
-                  "atr": {
-                    "id": "2"
-                  }
-                }
-              },
-              "ligcoo": {
-                "x": -35.651,
-                "y": -116.886,
-                "z": 84.681
-              },
-              "protcoo": {
-                "x": -34.736,
-                "y": -119.771,
-                "z": 82.923
-              }
-            }
-          }
+        "4": {
+          "aa": "ALA",
+          "contact": "False",
+          "min_dist": 7.4,
+          "value": "180E"
         },
-        "mappings": {
-          "smiles_to_pdb": "1:23802,2:23801,3:23799,4:23798,5:23796,6:23797,7:23788,8:23789,9:23790,10:23791,11:23792,12:23793,13:23794,14:23795,15:23804,16:23785,17:23786,18:23787,19:23800,20:23803"
+        "5": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 6.7,
+          "value": "221E"
+        },
+        "6": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 3.5,
+          "value": "118E"
+        },
+        "7": {
+          "aa": "LEU",
+          "contact": "False",
+          "min_dist": 5.6,
+          "value": "223E"
+        },
+        "8": {
+          "aa": "LYS",
+          "contact": "False",
+          "min_dist": 6.2,
+          "value": "350E"
+        },
+        "9": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 3.7,
+          "value": "277E"
+        },
+        "10": {
+          "aa": "VAL",
+          "contact": "False",
+          "min_dist": 7.1,
+          "value": "149E"
+        },
+        "11": {
+          "aa": "SER",
+          "contact": "False",
+          "min_dist": 3.7,
+          "value": "246E"
+        },
+        "12": {
+          "aa": "GLY",
+          "contact": "False",
+          "min_dist": 6.5,
+          "value": "244E"
+        },
+        "13": {
+          "aa": "GLY",
+          "contact": "False",
+          "min_dist": 4.4,
+          "value": "348E"
+        },
+        "14": {
+          "aa": "THR",
+          "contact": "False",
+          "min_dist": 7.0,
+          "value": "242E"
+        },
+        "15": {
+          "aa": "SER",
+          "contact": "False",
+          "min_dist": 4.4,
+          "value": "179E"
+        },
+        "16": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 2.8,
+          "value": "152E"
+        },
+        "17": {
+          "aa": "HIS",
+          "contact": "False",
+          "min_dist": 5.9,
+          "value": "274E"
+        },
+        "18": {
+          "aa": "LYS",
+          "contact": "False",
+          "min_dist": 5.9,
+          "value": "150E"
+        },
+        "19": {
+          "aa": "ARG",
+          "contact": "False",
+          "min_dist": 3.6,
+          "value": "224E"
+        },
+        "20": {
+          "aa": "ARG",
+          "contact": "False",
+          "min_dist": 5.0,
+          "value": "156E"
+        },
+        "21": {
+          "aa": "TYR",
+          "contact": "False",
+          "min_dist": 2.8,
+          "value": "347E"
+        },
+        "22": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 7.1,
+          "value": "198E"
+        },
+        "23": {
+          "aa": "TYR",
+          "contact": "False",
+          "min_dist": 2.9,
+          "value": "406E"
+        },
+        "24": {
+          "aa": "ILE",
+          "contact": "False",
+          "min_dist": 4.1,
+          "value": "222E"
+        },
+        "25": {
+          "aa": "GLU",
+          "contact": "True",
+          "min_dist": 2.9,
+          "value": "119E"
+        },
+        "26": {
+          "aa": "ILE",
+          "contact": "False",
+          "min_dist": 7.2,
+          "value": "194E"
+        },
+        "27": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 6.5,
+          "value": "425E"
+        },
+        "28": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 3.7,
+          "value": "294E"
+        },
+        "29": {
+          "aa": "LEU",
+          "contact": "False",
+          "min_dist": 6.1,
+          "value": "134E"
+        },
+        "30": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 2.8,
+          "value": "371E"
+        },
+        "31": {
+          "aa": "GLU",
+          "contact": "True",
+          "min_dist": 3.3,
+          "value": "276E"
+        },
+        "32": {
+          "aa": "PRO",
+          "contact": "False",
+          "min_dist": 6.6,
+          "value": "245E"
+        },
+        "33": {
+          "aa": "VAL",
+          "contact": "False",
+          "min_dist": 5.5,
+          "value": "349E"
+        },
+        "34": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 3.2,
+          "value": "292E"
+        },
+        "35": {
+          "aa": "TRP",
+          "contact": "True",
+          "min_dist": 3.9,
+          "value": "178E"
         }
+      },
+      "interactions": {
+        "hydrophobic_interactions": {
+          "1": {
+            "resnr": 178,
+            "restype": "TRP",
+            "reschain": "E",
+            "resnr_lig": 804,
+            "restype_lig": "G39",
+            "reschain_lig": "E",
+            "dist": 3.93,
+            "ligcarbonidx": 23795,
+            "protcarbonidx": 12600,
+            "ligcoo": {
+              "x": -40.482,
+              "y": -110.309,
+              "z": 88.157
+            },
+            "protcoo": {
+              "x": -41.682,
+              "y": -106.568,
+              "z": 88.094
+            }
+          },
+          "2": {
+            "resnr": 276,
+            "restype": "GLU",
+            "reschain": "E",
+            "resnr_lig": 804,
+            "restype_lig": "G39",
+            "reschain_lig": "E",
+            "dist": 3.65,
+            "ligcarbonidx": 23800,
+            "protcarbonidx": 13340,
+            "ligcoo": {
+              "x": -40.496,
+              "y": -116.0,
+              "z": 89.343
+            },
+            "protcoo": {
+              "x": -43.895,
+              "y": -117.154,
+              "z": 90.016
+            }
+          }
+        },
+        "hydrogen_bonds": {
+          "1": {
+            "resnr": 119,
+            "restype": "GLU",
+            "reschain": "E",
+            "resnr_lig": 804,
+            "restype_lig": "G39",
+            "reschain_lig": "E",
+            "sidechain": "True",
+            "dist_h-a": 1.87,
+            "dist_d-a": 2.87,
+            "don_angle": 168.56,
+            "protisdon": "False",
+            "donoridx": 23804,
+            "donortype": "N3",
+            "acceptoridx": 12132,
+            "acceptortype": "O3",
+            "ligcoo": {
+              "x": -37.979,
+              "y": -111.654,
+              "z": 84.625
+            },
+            "protcoo": {
+              "x": -37.619,
+              "y": -111.954,
+              "z": 81.789
+            }
+          },
+          "2": {
+            "resnr": 152,
+            "restype": "ARG",
+            "reschain": "E",
+            "resnr_lig": 804,
+            "restype_lig": "G39",
+            "reschain_lig": "E",
+            "sidechain": "True",
+            "dist_h-a": 2.03,
+            "dist_d-a": 2.77,
+            "don_angle": 129.86,
+            "protisdon": "True",
+            "donoridx": 12393,
+            "donortype": "Ng+",
+            "acceptoridx": 23794,
+            "acceptortype": "O2",
+            "ligcoo": {
+              "x": -38.151,
+              "y": -110.71,
+              "z": 88.27
+            },
+            "protcoo": {
+              "x": -37.086,
+              "y": -109.446,
+              "z": 90.494
+            }
+          }
+        },
+        "water_bridges": null,
+        "salt_bridges": {
+          "1": {
+            "resnr": 118,
+            "restype": "ARG",
+            "reschain": "E",
+            "resnr_lig": 804,
+            "restype_lig": "G39",
+            "reschain_lig": "E",
+            "dist": 5.16,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23786,
+              "2": 23787
+            },
+            "ligcoo": {
+              "x": -35.651,
+              "y": -116.886,
+              "z": 84.681
+            },
+            "protcoo": {
+              "x": -35.437,
+              "y": -114.05,
+              "z": 80.381
+            }
+          },
+          "2": {
+            "resnr": 292,
+            "restype": "ARG",
+            "reschain": "E",
+            "resnr_lig": 804,
+            "restype_lig": "G39",
+            "reschain_lig": "E",
+            "dist": 4.65,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23786,
+              "2": 23787
+            },
+            "ligcoo": {
+              "x": -35.651,
+              "y": -116.886,
+              "z": 84.681
+            },
+            "protcoo": {
+              "x": -38.796,
+              "y": -119.745,
+              "z": 86.563
+            }
+          },
+          "3": {
+            "resnr": 371,
+            "restype": "ARG",
+            "reschain": "E",
+            "resnr_lig": 804,
+            "restype_lig": "G39",
+            "reschain_lig": "E",
+            "dist": 3.5,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23786,
+              "2": 23787
+            },
+            "ligcoo": {
+              "x": -35.651,
+              "y": -116.886,
+              "z": 84.681
+            },
+            "protcoo": {
+              "x": -34.736,
+              "y": -119.771,
+              "z": 82.923
+            }
+          }
+        },
+        "pi_stacks": null,
+        "pi_cation_interactions": null,
+        "halogen_bonds": null,
+        "metal_complexes": null
+      },
+      "mappings": {
+        "smiles_to_pdb": "1:23802,2:23801,3:23799,4:23798,5:23796,6:23797,7:23788,8:23789,9:23790,10:23791,11:23792,12:23793,13:23794,14:23795,15:23804,16:23785,17:23786,18:23787,19:23800,20:23803"
       }
     },
     "6": {
-      "has_interactions": "True",
-      "information": {
-        "identifiers": {
-          "longname": "G39",
-          "ligtype": "SMALLMOLECULE",
-          "hetid": "G39",
-          "chain": "F",
-          "position": 805,
-          "composite": "False",
-          "members": {
-            "member": {
-              "value": "G39:F:805",
-              "atr": {
-                "id": "1"
-              }
-            }
-          },
-          "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
-          "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+      "identifiers": {
+        "longname": "G39",
+        "ligtype": "SMALLMOLECULE",
+        "hetid": "G39",
+        "chain": "F",
+        "position": 805,
+        "composite": "False",
+        "members": {
+          "1": "G39:F:805"
         },
-        "lig_properties": {
-          "num_heavy_atoms": 20,
-          "num_hbd": 4,
-          "num_unpaired_hbd": 1,
-          "num_hba": 6,
-          "num_unpaired_hba": 2,
-          "num_hal": 0,
-          "num_unpaired_hal": 0,
-          "num_aromatic_rings": 0,
-          "num_rotatable_bonds": 7,
-          "molweight": 284.35136,
-          "logp": 1.8981
+        "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
+        "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+      },
+      "lig_properties": {
+        "num_heavy_atoms": 20,
+        "num_hbd": 4,
+        "num_unpaired_hbd": 1,
+        "num_hba": 6,
+        "num_unpaired_hba": 2,
+        "num_hal": 0,
+        "num_unpaired_hal": 0,
+        "num_aromatic_rings": 0,
+        "num_rotatable_bonds": 7,
+        "molweight": 284.35136,
+        "logp": 1.8981
+      },
+      "interacting_chains": {
+        "1": "F"
+      },
+      "bs_residues": {
+        "1": {
+          "aa": "THR",
+          "contact": "False",
+          "min_dist": 6.2,
+          "value": "225F"
         },
-        "interacting_chains": {
-          "interacting_chain": {
-            "value": "F",
-            "atr": {
-              "id": "1"
-            }
-          }
+        "2": {
+          "aa": "ASP",
+          "contact": "True",
+          "min_dist": 3.1,
+          "value": "151F"
         },
-        "bs_residues": {
-          "bs_residue": {
-            "value": "292F",
-            "atr": {
-              "aa": "ARG",
-              "contact": "True",
-              "id": "35",
-              "min_dist": "3.3"
-            }
-          }
+        "3": {
+          "aa": "ALA",
+          "contact": "False",
+          "min_dist": 7.4,
+          "value": "180F"
         },
-        "interactions": {
-          "hydrophobic_interactions": {
-            "hydrophobic_interaction": {
-              "resnr": 294,
-              "restype": "ASN",
-              "reschain": "F",
-              "resnr_lig": 805,
-              "restype_lig": "G39",
-              "reschain_lig": "F",
-              "dist": 3.99,
-              "ligcarbonidx": 23823,
-              "protcarbonidx": 16436,
-              "ligcoo": {
-                "x": -30.155,
-                "y": -75.985,
-                "z": 32.635
-              },
-              "protcoo": {
-                "x": -29.946,
-                "y": -72.301,
-                "z": 31.127
-              }
-            }
-          },
-          "hydrogen_bonds": {
-            "hydrogen_bond": {
-              "resnr": 152,
-              "restype": "ARG",
-              "reschain": "F",
-              "resnr_lig": 805,
-              "restype_lig": "G39",
-              "reschain_lig": "F",
-              "sidechain": "True",
-              "dist_h-a": 2.13,
-              "dist_d-a": 2.88,
-              "don_angle": 132.17,
-              "protisdon": "True",
-              "donoridx": 15356,
-              "donortype": "Ng+",
-              "acceptoridx": 23814,
-              "acceptortype": "O2",
-              "ligcoo": {
-                "x": -29.32,
-                "y": -82.557,
-                "z": 34.159
-              },
-              "protcoo": {
-                "x": -27.585,
-                "y": -83.894,
-                "z": 32.288
-              }
-            }
-          },
-          "salt_bridges": {
-            "salt_bridge": {
-              "resnr": 371,
-              "restype": "ARG",
-              "reschain": "F",
-              "resnr_lig": 805,
-              "restype_lig": "G39",
-              "reschain_lig": "F",
-              "dist": 3.38,
-              "protispos": "True",
-              "lig_group": "Carboxylate",
-              "lig_idx_list": {
-                "idx": {
-                  "value": 23807,
-                  "atr": {
-                    "id": "2"
-                  }
-                }
-              },
-              "ligcoo": {
-                "x": -27.85,
-                "y": -76.454,
-                "z": 38.487
-              },
-              "protcoo": {
-                "x": -27.486,
-                "y": -73.63,
-                "z": 40.3
-              }
-            }
-          }
+        "4": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 4.2,
+          "value": "227F"
         },
-        "mappings": {
-          "smiles_to_pdb": "1:23822,2:23821,3:23819,4:23818,5:23816,6:23817,7:23808,8:23809,9:23810,10:23811,11:23812,12:23813,13:23814,14:23815,15:23824,16:23805,17:23806,18:23807,19:23820,20:23823"
+        "5": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 6.7,
+          "value": "221F"
+        },
+        "6": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 3.4,
+          "value": "118F"
+        },
+        "7": {
+          "aa": "LYS",
+          "contact": "False",
+          "min_dist": 6.2,
+          "value": "350F"
+        },
+        "8": {
+          "aa": "LEU",
+          "contact": "False",
+          "min_dist": 5.7,
+          "value": "223F"
+        },
+        "9": {
+          "aa": "VAL",
+          "contact": "False",
+          "min_dist": 7.0,
+          "value": "149F"
+        },
+        "10": {
+          "aa": "SER",
+          "contact": "False",
+          "min_dist": 3.6,
+          "value": "246F"
+        },
+        "11": {
+          "aa": "GLY",
+          "contact": "False",
+          "min_dist": 6.4,
+          "value": "244F"
+        },
+        "12": {
+          "aa": "SER",
+          "contact": "False",
+          "min_dist": 4.3,
+          "value": "179F"
+        },
+        "13": {
+          "aa": "GLY",
+          "contact": "False",
+          "min_dist": 4.5,
+          "value": "348F"
+        },
+        "14": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 3.6,
+          "value": "277F"
+        },
+        "15": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 2.9,
+          "value": "152F"
+        },
+        "16": {
+          "aa": "LYS",
+          "contact": "False",
+          "min_dist": 6.1,
+          "value": "150F"
+        },
+        "17": {
+          "aa": "HIS",
+          "contact": "False",
+          "min_dist": 5.8,
+          "value": "274F"
+        },
+        "18": {
+          "aa": "ARG",
+          "contact": "False",
+          "min_dist": 3.9,
+          "value": "224F"
+        },
+        "19": {
+          "aa": "ARG",
+          "contact": "False",
+          "min_dist": 4.9,
+          "value": "156F"
+        },
+        "20": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 7.3,
+          "value": "198F"
+        },
+        "21": {
+          "aa": "TYR",
+          "contact": "False",
+          "min_dist": 3.1,
+          "value": "347F"
+        },
+        "22": {
+          "aa": "TYR",
+          "contact": "False",
+          "min_dist": 2.8,
+          "value": "406F"
+        },
+        "23": {
+          "aa": "ILE",
+          "contact": "False",
+          "min_dist": 4.3,
+          "value": "222F"
+        },
+        "24": {
+          "aa": "ILE",
+          "contact": "False",
+          "min_dist": 7.4,
+          "value": "194F"
+        },
+        "25": {
+          "aa": "GLU",
+          "contact": "True",
+          "min_dist": 3.0,
+          "value": "119F"
+        },
+        "26": {
+          "aa": "ASN",
+          "contact": "True",
+          "min_dist": 3.6,
+          "value": "294F"
+        },
+        "27": {
+          "aa": "GLU",
+          "contact": "True",
+          "min_dist": 3.4,
+          "value": "276F"
+        },
+        "28": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 7.1,
+          "value": "247F"
+        },
+        "29": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 6.4,
+          "value": "425F"
+        },
+        "30": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 2.7,
+          "value": "371F"
+        },
+        "31": {
+          "aa": "LEU",
+          "contact": "False",
+          "min_dist": 6.0,
+          "value": "134F"
+        },
+        "32": {
+          "aa": "VAL",
+          "contact": "False",
+          "min_dist": 5.4,
+          "value": "349F"
+        },
+        "33": {
+          "aa": "PRO",
+          "contact": "False",
+          "min_dist": 6.6,
+          "value": "245F"
+        },
+        "34": {
+          "aa": "TRP",
+          "contact": "True",
+          "min_dist": 3.9,
+          "value": "178F"
+        },
+        "35": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 3.3,
+          "value": "292F"
         }
+      },
+      "interactions": {
+        "hydrophobic_interactions": {
+          "1": {
+            "resnr": 178,
+            "restype": "TRP",
+            "reschain": "F",
+            "resnr_lig": 805,
+            "restype_lig": "G39",
+            "reschain_lig": "F",
+            "dist": 3.87,
+            "ligcarbonidx": 23815,
+            "protcarbonidx": 15563,
+            "ligcoo": {
+              "x": -31.603,
+              "y": -82.911,
+              "z": 33.669
+            },
+            "protcoo": {
+              "x": -32.577,
+              "y": -86.644,
+              "z": 33.362
+            }
+          },
+          "2": {
+            "resnr": 276,
+            "restype": "GLU",
+            "reschain": "F",
+            "resnr_lig": 805,
+            "restype_lig": "G39",
+            "reschain_lig": "F",
+            "dist": 3.93,
+            "ligcarbonidx": 23820,
+            "protcarbonidx": 16303,
+            "ligcoo": {
+              "x": -31.058,
+              "y": -77.229,
+              "z": 32.616
+            },
+            "protcoo": {
+              "x": -34.201,
+              "y": -75.999,
+              "z": 30.605
+            }
+          },
+          "3": {
+            "resnr": 294,
+            "restype": "ASN",
+            "reschain": "F",
+            "resnr_lig": 805,
+            "restype_lig": "G39",
+            "reschain_lig": "F",
+            "dist": 3.99,
+            "ligcarbonidx": 23823,
+            "protcarbonidx": 16436,
+            "ligcoo": {
+              "x": -30.155,
+              "y": -75.985,
+              "z": 32.635
+            },
+            "protcoo": {
+              "x": -29.946,
+              "y": -72.301,
+              "z": 31.127
+            }
+          }
+        },
+        "hydrogen_bonds": {
+          "1": {
+            "resnr": 119,
+            "restype": "GLU",
+            "reschain": "F",
+            "resnr_lig": 805,
+            "restype_lig": "G39",
+            "reschain_lig": "F",
+            "sidechain": "True",
+            "dist_h-a": 1.98,
+            "dist_d-a": 2.99,
+            "don_angle": 172.24,
+            "protisdon": "False",
+            "donoridx": 23824,
+            "donortype": "N3",
+            "acceptoridx": 15095,
+            "acceptortype": "O2",
+            "ligcoo": {
+              "x": -30.172,
+              "y": -81.63,
+              "z": 37.773
+            },
+            "protcoo": {
+              "x": -30.693,
+              "y": -81.499,
+              "z": 40.714
+            }
+          },
+          "2": {
+            "resnr": 151,
+            "restype": "ASP",
+            "reschain": "F",
+            "resnr_lig": 805,
+            "restype_lig": "G39",
+            "reschain_lig": "F",
+            "sidechain": "True",
+            "dist_h-a": 2.55,
+            "dist_d-a": 3.07,
+            "don_angle": 115.59,
+            "protisdon": "True",
+            "donoridx": 15344,
+            "donortype": "O3",
+            "acceptoridx": 23824,
+            "acceptortype": "N3",
+            "ligcoo": {
+              "x": -30.172,
+              "y": -81.63,
+              "z": 37.773
+            },
+            "protcoo": {
+              "x": -27.139,
+              "y": -82.061,
+              "z": 37.574
+            }
+          },
+          "3": {
+            "resnr": 152,
+            "restype": "ARG",
+            "reschain": "F",
+            "resnr_lig": 805,
+            "restype_lig": "G39",
+            "reschain_lig": "F",
+            "sidechain": "True",
+            "dist_h-a": 2.13,
+            "dist_d-a": 2.88,
+            "don_angle": 132.17,
+            "protisdon": "True",
+            "donoridx": 15356,
+            "donortype": "Ng+",
+            "acceptoridx": 23814,
+            "acceptortype": "O2",
+            "ligcoo": {
+              "x": -29.32,
+              "y": -82.557,
+              "z": 34.159
+            },
+            "protcoo": {
+              "x": -27.585,
+              "y": -83.894,
+              "z": 32.288
+            }
+          }
+        },
+        "water_bridges": null,
+        "salt_bridges": {
+          "1": {
+            "resnr": 118,
+            "restype": "ARG",
+            "reschain": "F",
+            "resnr_lig": 805,
+            "restype_lig": "G39",
+            "reschain_lig": "F",
+            "dist": 5.13,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23806,
+              "2": 23807
+            },
+            "ligcoo": {
+              "x": -27.85,
+              "y": -76.454,
+              "z": 38.487
+            },
+            "protcoo": {
+              "x": -28.985,
+              "y": -79.285,
+              "z": 42.617
+            }
+          },
+          "2": {
+            "resnr": 292,
+            "restype": "ARG",
+            "reschain": "F",
+            "resnr_lig": 805,
+            "restype_lig": "G39",
+            "reschain_lig": "F",
+            "dist": 4.64,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23806,
+              "2": 23807
+            },
+            "ligcoo": {
+              "x": -27.85,
+              "y": -76.454,
+              "z": 38.487
+            },
+            "protcoo": {
+              "x": -30.198,
+              "y": -73.818,
+              "z": 35.477
+            }
+          },
+          "3": {
+            "resnr": 371,
+            "restype": "ARG",
+            "reschain": "F",
+            "resnr_lig": 805,
+            "restype_lig": "G39",
+            "reschain_lig": "F",
+            "dist": 3.38,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23806,
+              "2": 23807
+            },
+            "ligcoo": {
+              "x": -27.85,
+              "y": -76.454,
+              "z": 38.487
+            },
+            "protcoo": {
+              "x": -27.486,
+              "y": -73.63,
+              "z": 40.3
+            }
+          }
+        },
+        "pi_stacks": null,
+        "pi_cation_interactions": null,
+        "halogen_bonds": null,
+        "metal_complexes": null
+      },
+      "mappings": {
+        "smiles_to_pdb": "1:23822,2:23821,3:23819,4:23818,5:23816,6:23817,7:23808,8:23809,9:23810,10:23811,11:23812,12:23813,13:23814,14:23815,15:23824,16:23805,17:23806,18:23807,19:23820,20:23823"
       }
     },
     "7": {
-      "has_interactions": "True",
-      "information": {
-        "identifiers": {
-          "longname": "G39",
-          "ligtype": "SMALLMOLECULE",
-          "hetid": "G39",
-          "chain": "G",
-          "position": 806,
-          "composite": "False",
-          "members": {
-            "member": {
-              "value": "G39:G:806",
-              "atr": {
-                "id": "1"
-              }
-            }
-          },
-          "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
-          "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+      "identifiers": {
+        "longname": "G39",
+        "ligtype": "SMALLMOLECULE",
+        "hetid": "G39",
+        "chain": "G",
+        "position": 806,
+        "composite": "False",
+        "members": {
+          "1": "G39:G:806"
         },
-        "lig_properties": {
-          "num_heavy_atoms": 20,
-          "num_hbd": 4,
-          "num_unpaired_hbd": 1,
-          "num_hba": 6,
-          "num_unpaired_hba": 2,
-          "num_hal": 0,
-          "num_unpaired_hal": 0,
-          "num_aromatic_rings": 0,
-          "num_rotatable_bonds": 7,
-          "molweight": 284.35136,
-          "logp": 1.8981
+        "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
+        "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+      },
+      "lig_properties": {
+        "num_heavy_atoms": 20,
+        "num_hbd": 4,
+        "num_unpaired_hbd": 1,
+        "num_hba": 6,
+        "num_unpaired_hba": 2,
+        "num_hal": 0,
+        "num_unpaired_hal": 0,
+        "num_aromatic_rings": 0,
+        "num_rotatable_bonds": 7,
+        "molweight": 284.35136,
+        "logp": 1.8981
+      },
+      "interacting_chains": {
+        "1": "G"
+      },
+      "bs_residues": {
+        "1": {
+          "aa": "THR",
+          "contact": "False",
+          "min_dist": 6.3,
+          "value": "225G"
         },
-        "interacting_chains": {
-          "interacting_chain": {
-            "value": "G",
-            "atr": {
-              "id": "1"
-            }
-          }
+        "2": {
+          "aa": "ASP",
+          "contact": "True",
+          "min_dist": 2.7,
+          "value": "151G"
         },
-        "bs_residues": {
-          "bs_residue": {
-            "value": "178G",
-            "atr": {
-              "aa": "TRP",
-              "contact": "True",
-              "id": "37",
-              "min_dist": "3.7"
-            }
-          }
+        "3": {
+          "aa": "ALA",
+          "contact": "False",
+          "min_dist": 7.3,
+          "value": "180G"
         },
-        "interactions": {
-          "hydrophobic_interactions": {
-            "hydrophobic_interaction": {
-              "resnr": 276,
-              "restype": "GLU",
-              "reschain": "G",
-              "resnr_lig": 806,
-              "restype_lig": "G39",
-              "reschain_lig": "G",
-              "dist": 3.8,
-              "ligcarbonidx": 23840,
-              "protcarbonidx": 19266,
-              "ligcoo": {
-                "x": -33.381,
-                "y": -125.326,
-                "z": 41.999
-              },
-              "protcoo": {
-                "x": -36.475,
-                "y": -126.658,
-                "z": 40.233
-              }
-            }
-          },
-          "hydrogen_bonds": {
-            "hydrogen_bond": {
-              "resnr": 406,
-              "restype": "TYR",
-              "reschain": "G",
-              "resnr_lig": 806,
-              "restype_lig": "G39",
-              "reschain_lig": "G",
-              "sidechain": "True",
-              "dist_h-a": 2.72,
-              "dist_d-a": 3.62,
-              "don_angle": 160.31,
-              "protisdon": "True",
-              "donoridx": 20236,
-              "donortype": "O3",
-              "acceptoridx": 23826,
-              "acceptortype": "O.co2",
-              "ligcoo": {
-                "x": -28.989,
-                "y": -120.879,
-                "z": 41.074
-              },
-              "protcoo": {
-                "x": -32.429,
-                "y": -119.847,
-                "z": 41.526
-              }
-            }
-          },
-          "salt_bridges": {
-            "salt_bridge": {
-              "resnr": 371,
-              "restype": "ARG",
-              "reschain": "G",
-              "resnr_lig": 806,
-              "restype_lig": "G39",
-              "reschain_lig": "G",
-              "dist": 3.4,
-              "protispos": "True",
-              "lig_group": "Carboxylate",
-              "lig_idx_list": {
-                "idx": {
-                  "value": 23827,
-                  "atr": {
-                    "id": "2"
-                  }
-                }
-              },
-              "ligcoo": {
-                "x": -28.908,
-                "y": -120.017,
-                "z": 41.757
-              },
-              "protcoo": {
-                "x": -27.975,
-                "y": -118.217,
-                "z": 39.028
-              }
-            }
-          }
+        "4": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 4.2,
+          "value": "227G"
         },
-        "mappings": {
-          "smiles_to_pdb": "1:23842,2:23841,3:23839,4:23838,5:23836,6:23837,7:23828,8:23829,9:23830,10:23831,11:23832,12:23833,13:23834,14:23835,15:23844,16:23825,17:23826,18:23827,19:23840,20:23843"
+        "5": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 6.7,
+          "value": "221G"
+        },
+        "6": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 3.6,
+          "value": "118G"
+        },
+        "7": {
+          "aa": "LEU",
+          "contact": "False",
+          "min_dist": 5.6,
+          "value": "223G"
+        },
+        "8": {
+          "aa": "LYS",
+          "contact": "False",
+          "min_dist": 6.4,
+          "value": "350G"
+        },
+        "9": {
+          "aa": "VAL",
+          "contact": "False",
+          "min_dist": 7.0,
+          "value": "149G"
+        },
+        "10": {
+          "aa": "SER",
+          "contact": "False",
+          "min_dist": 3.7,
+          "value": "246G"
+        },
+        "11": {
+          "aa": "GLY",
+          "contact": "False",
+          "min_dist": 6.4,
+          "value": "244G"
+        },
+        "12": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 7.2,
+          "value": "293G"
+        },
+        "13": {
+          "aa": "SER",
+          "contact": "False",
+          "min_dist": 4.2,
+          "value": "179G"
+        },
+        "14": {
+          "aa": "GLY",
+          "contact": "False",
+          "min_dist": 4.5,
+          "value": "348G"
+        },
+        "15": {
+          "aa": "THR",
+          "contact": "False",
+          "min_dist": 7.2,
+          "value": "242G"
+        },
+        "16": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 2.8,
+          "value": "152G"
+        },
+        "17": {
+          "aa": "LYS",
+          "contact": "False",
+          "min_dist": 6.1,
+          "value": "150G"
+        },
+        "18": {
+          "aa": "HIS",
+          "contact": "False",
+          "min_dist": 6.0,
+          "value": "274G"
+        },
+        "19": {
+          "aa": "ARG",
+          "contact": "False",
+          "min_dist": 3.7,
+          "value": "224G"
+        },
+        "20": {
+          "aa": "ARG",
+          "contact": "False",
+          "min_dist": 4.8,
+          "value": "156G"
+        },
+        "21": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 7.1,
+          "value": "198G"
+        },
+        "22": {
+          "aa": "TYR",
+          "contact": "False",
+          "min_dist": 2.8,
+          "value": "347G"
+        },
+        "23": {
+          "aa": "TYR",
+          "contact": "True",
+          "min_dist": 2.9,
+          "value": "406G"
+        },
+        "24": {
+          "aa": "ILE",
+          "contact": "False",
+          "min_dist": 4.0,
+          "value": "222G"
+        },
+        "25": {
+          "aa": "ILE",
+          "contact": "False",
+          "min_dist": 7.4,
+          "value": "194G"
+        },
+        "26": {
+          "aa": "GLU",
+          "contact": "True",
+          "min_dist": 3.0,
+          "value": "119G"
+        },
+        "27": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 3.7,
+          "value": "277G"
+        },
+        "28": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 3.8,
+          "value": "294G"
+        },
+        "29": {
+          "aa": "GLU",
+          "contact": "True",
+          "min_dist": 3.4,
+          "value": "276G"
+        },
+        "30": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 7.2,
+          "value": "247G"
+        },
+        "31": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 2.7,
+          "value": "371G"
+        },
+        "32": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 6.2,
+          "value": "425G"
+        },
+        "33": {
+          "aa": "VAL",
+          "contact": "False",
+          "min_dist": 5.5,
+          "value": "349G"
+        },
+        "34": {
+          "aa": "PRO",
+          "contact": "False",
+          "min_dist": 6.7,
+          "value": "245G"
+        },
+        "35": {
+          "aa": "LEU",
+          "contact": "False",
+          "min_dist": 5.9,
+          "value": "134G"
+        },
+        "36": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 3.3,
+          "value": "292G"
+        },
+        "37": {
+          "aa": "TRP",
+          "contact": "True",
+          "min_dist": 3.7,
+          "value": "178G"
         }
+      },
+      "interactions": {
+        "hydrophobic_interactions": {
+          "1": {
+            "resnr": 178,
+            "restype": "TRP",
+            "reschain": "G",
+            "resnr_lig": 806,
+            "restype_lig": "G39",
+            "reschain_lig": "G",
+            "dist": 3.75,
+            "ligcarbonidx": 23835,
+            "protcarbonidx": 18528,
+            "ligcoo": {
+              "x": -34.475,
+              "y": -124.02,
+              "z": 47.404
+            },
+            "protcoo": {
+              "x": -36.398,
+              "y": -125.278,
+              "z": 50.365
+            }
+          },
+          "2": {
+            "resnr": 276,
+            "restype": "GLU",
+            "reschain": "G",
+            "resnr_lig": 806,
+            "restype_lig": "G39",
+            "reschain_lig": "G",
+            "dist": 3.8,
+            "ligcarbonidx": 23840,
+            "protcarbonidx": 19266,
+            "ligcoo": {
+              "x": -33.381,
+              "y": -125.326,
+              "z": 41.999
+            },
+            "protcoo": {
+              "x": -36.475,
+              "y": -126.658,
+              "z": 40.233
+            }
+          }
+        },
+        "hydrogen_bonds": {
+          "1": {
+            "resnr": 119,
+            "restype": "GLU",
+            "reschain": "G",
+            "resnr_lig": 806,
+            "restype_lig": "G39",
+            "reschain_lig": "G",
+            "sidechain": "True",
+            "dist_h-a": 2.0,
+            "dist_d-a": 3.01,
+            "don_angle": 171.67,
+            "protisdon": "False",
+            "donoridx": 23844,
+            "donortype": "N3",
+            "acceptoridx": 18058,
+            "acceptortype": "O2",
+            "ligcoo": {
+              "x": -32.115,
+              "y": -120.295,
+              "z": 46.46
+            },
+            "protcoo": {
+              "x": -32.054,
+              "y": -117.285,
+              "z": 46.403
+            }
+          },
+          "2": {
+            "resnr": 151,
+            "restype": "ASP",
+            "reschain": "G",
+            "resnr_lig": 806,
+            "restype_lig": "G39",
+            "reschain_lig": "G",
+            "sidechain": "True",
+            "dist_h-a": 2.33,
+            "dist_d-a": 2.73,
+            "don_angle": 105.47,
+            "protisdon": "True",
+            "donoridx": 18307,
+            "donortype": "O3",
+            "acceptoridx": 23844,
+            "acceptortype": "N3",
+            "ligcoo": {
+              "x": -32.115,
+              "y": -120.295,
+              "z": 46.46
+            },
+            "protcoo": {
+              "x": -29.571,
+              "y": -120.846,
+              "z": 47.283
+            }
+          },
+          "3": {
+            "resnr": 152,
+            "restype": "ARG",
+            "reschain": "G",
+            "resnr_lig": 806,
+            "restype_lig": "G39",
+            "reschain_lig": "G",
+            "sidechain": "True",
+            "dist_h-a": 1.99,
+            "dist_d-a": 2.81,
+            "don_angle": 140.16,
+            "protisdon": "True",
+            "donoridx": 18319,
+            "donortype": "Ng+",
+            "acceptoridx": 23834,
+            "acceptortype": "O2",
+            "ligcoo": {
+              "x": -32.103,
+              "y": -123.96,
+              "z": 47.478
+            },
+            "protcoo": {
+              "x": -30.781,
+              "y": -125.974,
+              "z": 48.93
+            }
+          },
+          "4": {
+            "resnr": 406,
+            "restype": "TYR",
+            "reschain": "G",
+            "resnr_lig": 806,
+            "restype_lig": "G39",
+            "reschain_lig": "G",
+            "sidechain": "True",
+            "dist_h-a": 2.72,
+            "dist_d-a": 3.62,
+            "don_angle": 160.31,
+            "protisdon": "True",
+            "donoridx": 20236,
+            "donortype": "O3",
+            "acceptoridx": 23826,
+            "acceptortype": "O.co2",
+            "ligcoo": {
+              "x": -28.989,
+              "y": -120.879,
+              "z": 41.074
+            },
+            "protcoo": {
+              "x": -32.429,
+              "y": -119.847,
+              "z": 41.526
+            }
+          }
+        },
+        "water_bridges": null,
+        "salt_bridges": {
+          "1": {
+            "resnr": 118,
+            "restype": "ARG",
+            "reschain": "G",
+            "resnr_lig": 806,
+            "restype_lig": "G39",
+            "reschain_lig": "G",
+            "dist": 5.09,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23826,
+              "2": 23827
+            },
+            "ligcoo": {
+              "x": -28.908,
+              "y": -120.017,
+              "z": 41.757
+            },
+            "protcoo": {
+              "x": -29.848,
+              "y": -115.708,
+              "z": 44.3
+            }
+          },
+          "2": {
+            "resnr": 292,
+            "restype": "ARG",
+            "reschain": "G",
+            "resnr_lig": 806,
+            "restype_lig": "G39",
+            "reschain_lig": "G",
+            "dist": 4.74,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23826,
+              "2": 23827
+            },
+            "ligcoo": {
+              "x": -28.908,
+              "y": -120.017,
+              "z": 41.757
+            },
+            "protcoo": {
+              "x": -31.433,
+              "y": -122.391,
+              "z": 38.518
+            }
+          },
+          "3": {
+            "resnr": 371,
+            "restype": "ARG",
+            "reschain": "G",
+            "resnr_lig": 806,
+            "restype_lig": "G39",
+            "reschain_lig": "G",
+            "dist": 3.4,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23826,
+              "2": 23827
+            },
+            "ligcoo": {
+              "x": -28.908,
+              "y": -120.017,
+              "z": 41.757
+            },
+            "protcoo": {
+              "x": -27.975,
+              "y": -118.217,
+              "z": 39.028
+            }
+          }
+        },
+        "pi_stacks": null,
+        "pi_cation_interactions": null,
+        "halogen_bonds": null,
+        "metal_complexes": null
+      },
+      "mappings": {
+        "smiles_to_pdb": "1:23842,2:23841,3:23839,4:23838,5:23836,6:23837,7:23828,8:23829,9:23830,10:23831,11:23832,12:23833,13:23834,14:23835,15:23844,16:23825,17:23826,18:23827,19:23840,20:23843"
       }
     },
     "8": {
-      "has_interactions": "True",
-      "information": {
-        "identifiers": {
-          "longname": "G39",
-          "ligtype": "SMALLMOLECULE",
-          "hetid": "G39",
-          "chain": "H",
-          "position": 807,
-          "composite": "False",
-          "members": {
-            "member": {
-              "value": "G39:H:807",
-              "atr": {
-                "id": "1"
-              }
-            }
-          },
-          "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
-          "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+      "identifiers": {
+        "longname": "G39",
+        "ligtype": "SMALLMOLECULE",
+        "hetid": "G39",
+        "chain": "H",
+        "position": 807,
+        "composite": "False",
+        "members": {
+          "1": "G39:H:807"
         },
-        "lig_properties": {
-          "num_heavy_atoms": 20,
-          "num_hbd": 4,
-          "num_unpaired_hbd": 1,
-          "num_hba": 6,
-          "num_unpaired_hba": 2,
-          "num_hal": 0,
-          "num_unpaired_hal": 0,
-          "num_aromatic_rings": 0,
-          "num_rotatable_bonds": 7,
-          "molweight": 284.35136,
-          "logp": 1.8981
+        "smiles": "CCC(O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)N)C(=O)O)CC",
+        "inchikey": "NENPYTRHICXVCS-YNEHKIRRSA-N\n"
+      },
+      "lig_properties": {
+        "num_heavy_atoms": 20,
+        "num_hbd": 4,
+        "num_unpaired_hbd": 1,
+        "num_hba": 6,
+        "num_unpaired_hba": 2,
+        "num_hal": 0,
+        "num_unpaired_hal": 0,
+        "num_aromatic_rings": 0,
+        "num_rotatable_bonds": 7,
+        "molweight": 284.35136,
+        "logp": 1.8981
+      },
+      "interacting_chains": {
+        "1": "H"
+      },
+      "bs_residues": {
+        "1": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 2.6,
+          "value": "151H"
         },
-        "interacting_chains": {
-          "interacting_chain": {
-            "value": "H",
-            "atr": {
-              "id": "1"
-            }
-          }
+        "2": {
+          "aa": "THR",
+          "contact": "False",
+          "min_dist": 6.2,
+          "value": "225H"
         },
-        "bs_residues": {
-          "bs_residue": {
-            "value": "247H",
-            "atr": {
-              "aa": "ASN",
-              "contact": "False",
-              "id": "36",
-              "min_dist": "7.3"
-            }
-          }
+        "3": {
+          "aa": "LYS",
+          "contact": "False",
+          "min_dist": 6.5,
+          "value": "350H"
         },
-        "interactions": {
-          "hydrophobic_interactions": {
-            "hydrophobic_interaction": {
-              "resnr": 276,
-              "restype": "GLU",
-              "reschain": "H",
-              "resnr_lig": 807,
-              "restype_lig": "G39",
-              "reschain_lig": "H",
-              "dist": 3.85,
-              "ligcarbonidx": 23860,
-              "protcarbonidx": 22229,
-              "ligcoo": {
-                "x": -38.733,
-                "y": -67.918,
-                "z": 80.113
-              },
-              "protcoo": {
-                "x": -42.228,
-                "y": -66.434,
-                "z": 80.757
-              }
-            }
-          },
-          "hydrogen_bonds": {
-            "hydrogen_bond": {
-              "resnr": 347,
-              "restype": "TYR",
-              "reschain": "H",
-              "resnr_lig": 807,
-              "restype_lig": "G39",
-              "reschain_lig": "H",
-              "sidechain": "True",
-              "dist_h-a": 3.49,
-              "dist_d-a": 3.89,
-              "don_angle": 107.9,
-              "protisdon": "True",
-              "donoridx": 22739,
-              "donortype": "O3",
-              "acceptoridx": 23847,
-              "acceptortype": "O.co2",
-              "ligcoo": {
-                "x": -34.381,
-                "y": -73.865,
-                "z": 81.159
-              },
-              "protcoo": {
-                "x": -32.613,
-                "y": -71.802,
-                "z": 83.938
-              }
-            }
-          },
-          "salt_bridges": {
-            "salt_bridge": {
-              "resnr": 371,
-              "restype": "ARG",
-              "reschain": "H",
-              "resnr_lig": 807,
-              "restype_lig": "G39",
-              "reschain_lig": "H",
-              "dist": 3.47,
-              "protispos": "True",
-              "lig_group": "Carboxylate",
-              "lig_idx_list": {
-                "idx": {
-                  "value": 23847,
-                  "atr": {
-                    "id": "2"
-                  }
-                }
-              },
-              "ligcoo": {
-                "x": -34.669,
-                "y": -72.945,
-                "z": 81.706
-              },
-              "protcoo": {
-                "x": -34.539,
-                "y": -75.07,
-                "z": 84.446
-              }
-            }
-          }
+        "4": {
+          "aa": "LEU",
+          "contact": "False",
+          "min_dist": 5.6,
+          "value": "223H"
         },
-        "mappings": {
-          "smiles_to_pdb": "1:23862,2:23861,3:23859,4:23858,5:23856,6:23857,7:23848,8:23849,9:23850,10:23851,11:23852,12:23853,13:23854,14:23855,15:23864,16:23845,17:23846,18:23847,19:23860,20:23863"
+        "5": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 3.8,
+          "value": "118H"
+        },
+        "6": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 6.7,
+          "value": "221H"
+        },
+        "7": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 4.3,
+          "value": "227H"
+        },
+        "8": {
+          "aa": "ALA",
+          "contact": "False",
+          "min_dist": 7.3,
+          "value": "180H"
+        },
+        "9": {
+          "aa": "LEU",
+          "contact": "False",
+          "min_dist": 6.0,
+          "value": "134H"
+        },
+        "10": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 3.6,
+          "value": "277H"
+        },
+        "11": {
+          "aa": "GLU",
+          "contact": "False",
+          "min_dist": 6.4,
+          "value": "425H"
+        },
+        "12": {
+          "aa": "VAL",
+          "contact": "False",
+          "min_dist": 7.2,
+          "value": "149H"
+        },
+        "13": {
+          "aa": "THR",
+          "contact": "False",
+          "min_dist": 7.4,
+          "value": "242H"
+        },
+        "14": {
+          "aa": "GLY",
+          "contact": "False",
+          "min_dist": 4.4,
+          "value": "348H"
+        },
+        "15": {
+          "aa": "SER",
+          "contact": "False",
+          "min_dist": 4.2,
+          "value": "179H"
+        },
+        "16": {
+          "aa": "GLY",
+          "contact": "False",
+          "min_dist": 6.5,
+          "value": "244H"
+        },
+        "17": {
+          "aa": "SER",
+          "contact": "False",
+          "min_dist": 3.8,
+          "value": "246H"
+        },
+        "18": {
+          "aa": "ARG",
+          "contact": "False",
+          "min_dist": 4.9,
+          "value": "156H"
+        },
+        "19": {
+          "aa": "ARG",
+          "contact": "False",
+          "min_dist": 3.6,
+          "value": "224H"
+        },
+        "20": {
+          "aa": "HIS",
+          "contact": "False",
+          "min_dist": 6.1,
+          "value": "274H"
+        },
+        "21": {
+          "aa": "LYS",
+          "contact": "False",
+          "min_dist": 6.1,
+          "value": "150H"
+        },
+        "22": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 2.8,
+          "value": "152H"
+        },
+        "23": {
+          "aa": "GLU",
+          "contact": "True",
+          "min_dist": 3.1,
+          "value": "119H"
+        },
+        "24": {
+          "aa": "ILE",
+          "contact": "False",
+          "min_dist": 7.3,
+          "value": "194H"
+        },
+        "25": {
+          "aa": "ILE",
+          "contact": "False",
+          "min_dist": 4.1,
+          "value": "222H"
+        },
+        "26": {
+          "aa": "TYR",
+          "contact": "False",
+          "min_dist": 2.9,
+          "value": "406H"
+        },
+        "27": {
+          "aa": "TYR",
+          "contact": "True",
+          "min_dist": 2.9,
+          "value": "347H"
+        },
+        "28": {
+          "aa": "ASP",
+          "contact": "False",
+          "min_dist": 7.0,
+          "value": "198H"
+        },
+        "29": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 3.7,
+          "value": "294H"
+        },
+        "30": {
+          "aa": "TRP",
+          "contact": "True",
+          "min_dist": 3.8,
+          "value": "178H"
+        },
+        "31": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 3.0,
+          "value": "292H"
+        },
+        "32": {
+          "aa": "PRO",
+          "contact": "False",
+          "min_dist": 6.7,
+          "value": "245H"
+        },
+        "33": {
+          "aa": "VAL",
+          "contact": "False",
+          "min_dist": 5.6,
+          "value": "349H"
+        },
+        "34": {
+          "aa": "ARG",
+          "contact": "True",
+          "min_dist": 2.8,
+          "value": "371H"
+        },
+        "35": {
+          "aa": "GLU",
+          "contact": "True",
+          "min_dist": 3.5,
+          "value": "276H"
+        },
+        "36": {
+          "aa": "ASN",
+          "contact": "False",
+          "min_dist": 7.3,
+          "value": "247H"
         }
+      },
+      "interactions": {
+        "hydrophobic_interactions": {
+          "1": {
+            "resnr": 178,
+            "restype": "TRP",
+            "reschain": "H",
+            "resnr_lig": 807,
+            "restype_lig": "G39",
+            "reschain_lig": "H",
+            "dist": 3.83,
+            "ligcarbonidx": 23855,
+            "protcarbonidx": 21489,
+            "ligcoo": {
+              "x": -37.951,
+              "y": -69.183,
+              "z": 74.323
+            },
+            "protcoo": {
+              "x": -38.472,
+              "y": -68.95,
+              "z": 70.537
+            }
+          },
+          "2": {
+            "resnr": 276,
+            "restype": "GLU",
+            "reschain": "H",
+            "resnr_lig": 807,
+            "restype_lig": "G39",
+            "reschain_lig": "H",
+            "dist": 3.85,
+            "ligcarbonidx": 23860,
+            "protcarbonidx": 22229,
+            "ligcoo": {
+              "x": -38.733,
+              "y": -67.918,
+              "z": 80.113
+            },
+            "protcoo": {
+              "x": -42.228,
+              "y": -66.434,
+              "z": 80.757
+            }
+          }
+        },
+        "hydrogen_bonds": {
+          "1": {
+            "resnr": 119,
+            "restype": "GLU",
+            "reschain": "H",
+            "resnr_lig": 807,
+            "restype_lig": "G39",
+            "reschain_lig": "H",
+            "sidechain": "True",
+            "dist_h-a": 2.06,
+            "dist_d-a": 3.08,
+            "don_angle": 173.34,
+            "protisdon": "False",
+            "donoridx": 23864,
+            "donortype": "N3",
+            "acceptoridx": 21021,
+            "acceptortype": "O3",
+            "ligcoo": {
+              "x": -36.169,
+              "y": -73.026,
+              "z": 76.155
+            },
+            "protcoo": {
+              "x": -36.354,
+              "y": -76.072,
+              "z": 76.551
+            }
+          },
+          "2": {
+            "resnr": 152,
+            "restype": "ARG",
+            "reschain": "H",
+            "resnr_lig": 807,
+            "restype_lig": "G39",
+            "reschain_lig": "H",
+            "sidechain": "True",
+            "dist_h-a": 2.06,
+            "dist_d-a": 2.85,
+            "don_angle": 135.46,
+            "protisdon": "True",
+            "donoridx": 21282,
+            "donortype": "Ng+",
+            "acceptoridx": 23854,
+            "acceptortype": "O2",
+            "ligcoo": {
+              "x": -35.727,
+              "y": -69.32,
+              "z": 75.116
+            },
+            "protcoo": {
+              "x": -34.008,
+              "y": -67.286,
+              "z": 74.103
+            }
+          },
+          "3": {
+            "resnr": 347,
+            "restype": "TYR",
+            "reschain": "H",
+            "resnr_lig": 807,
+            "restype_lig": "G39",
+            "reschain_lig": "H",
+            "sidechain": "True",
+            "dist_h-a": 3.49,
+            "dist_d-a": 3.89,
+            "don_angle": 107.9,
+            "protisdon": "True",
+            "donoridx": 22739,
+            "donortype": "O3",
+            "acceptoridx": 23847,
+            "acceptortype": "O.co2",
+            "ligcoo": {
+              "x": -34.381,
+              "y": -73.865,
+              "z": 81.159
+            },
+            "protcoo": {
+              "x": -32.613,
+              "y": -71.802,
+              "z": 83.938
+            }
+          }
+        },
+        "water_bridges": null,
+        "salt_bridges": {
+          "1": {
+            "resnr": 118,
+            "restype": "ARG",
+            "reschain": "H",
+            "resnr_lig": 807,
+            "restype_lig": "G39",
+            "reschain_lig": "H",
+            "dist": 5.41,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23846,
+              "2": 23847
+            },
+            "ligcoo": {
+              "x": -34.669,
+              "y": -72.945,
+              "z": 81.706
+            },
+            "protcoo": {
+              "x": -34.837,
+              "y": -77.544,
+              "z": 78.854
+            }
+          },
+          "2": {
+            "resnr": 292,
+            "restype": "ARG",
+            "reschain": "H",
+            "resnr_lig": 807,
+            "restype_lig": "G39",
+            "reschain_lig": "H",
+            "dist": 4.52,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23846,
+              "2": 23847
+            },
+            "ligcoo": {
+              "x": -34.669,
+              "y": -72.945,
+              "z": 81.706
+            },
+            "protcoo": {
+              "x": -37.983,
+              "y": -70.794,
+              "z": 83.891
+            }
+          },
+          "3": {
+            "resnr": 371,
+            "restype": "ARG",
+            "reschain": "H",
+            "resnr_lig": 807,
+            "restype_lig": "G39",
+            "reschain_lig": "H",
+            "dist": 3.47,
+            "protispos": "True",
+            "lig_group": "Carboxylate",
+            "lig_idx_list": {
+              "1": 23846,
+              "2": 23847
+            },
+            "ligcoo": {
+              "x": -34.669,
+              "y": -72.945,
+              "z": 81.706
+            },
+            "protcoo": {
+              "x": -34.539,
+              "y": -75.07,
+              "z": 84.446
+            }
+          }
+        },
+        "pi_stacks": null,
+        "pi_cation_interactions": null,
+        "halogen_bonds": null,
+        "metal_complexes": null
+      },
+      "mappings": {
+        "smiles_to_pdb": "1:23862,2:23861,3:23859,4:23858,5:23856,6:23857,7:23848,8:23849,9:23850,10:23851,11:23852,12:23853,13:23854,14:23855,15:23864,16:23845,17:23846,18:23847,19:23860,20:23863"
       }
     }
   },
-  "covlinkages": {}
+  "pdbid": "2HU4"
 }
