@@ -33,3 +33,11 @@ Its Goal is to combine detailed information on ligand binding residues in protei
 
 
 # Testing
+
+# Contact
+ayllonbenitez.aaron@gmail.com	Aaron Ayllon-Benitez
+sangramsahu15@gmail.com	Sangram Keshari Sahu
+rachita.kumar9@gmail.com	Rachita K Kumar
+abrol@csun.edu Ravi Abrol
+sreeranjinibabu611@gmail.com	Sreeranjini Babu
+smalkaram@wvstateu.edu	Sridhar Malkaram
