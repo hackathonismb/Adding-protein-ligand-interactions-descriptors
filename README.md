@@ -17,6 +17,7 @@ Its Goal is to combine detailed information on ligand binding residues in protei
 TBD
 
 ## Dependencies
+TBD
 ### Python modules
 json,pandas,xml
 ### Protein-Ligand Interaction Profiler (https://projects.biotec.tu-dresden.de/plip-web/plip/index)
@@ -26,8 +27,8 @@ For topology file generation
 ### Amber-tools20 (http://ambermd.org/AmberTools.php)
 For interaction energy computation
 ### GROMACS (http://www.gromacs.org/) or NAMD (https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=NAMD)
-To setup the molecule for 
-TBD
+To setup the molecule for energy calculation
+
   
 # Configuration
 TBD
@@ -48,7 +49,7 @@ For further information: <br>
 
 ### Compare interactions for two ligands at the same residues: MultiIndexing: Interaction specific
 
-xmlToJSON.py -j1 <jsonfile1> -j2 <jsonfile2> -o <outputCsv> <br>
+> xmlToJSON.py -j1 <jsonfile1> -j2 <jsonfile2> -o <outputCsv> <br>
 -j1 --jsonfile1:	First JSON file obtained by xmlToJSON.py script <br>
 -j2 --jsonfile2:	Second JSON file obtained by xmlToJSON.py script <br>
 -o --outputCsv:	CSV output file
