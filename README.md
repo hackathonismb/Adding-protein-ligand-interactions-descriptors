@@ -38,6 +38,22 @@ TBD
 
 ## Create interaction list
 
+### The xmlToJSON.py get a xml from Protein-Ligand Interaction Profiler (PLIP) database and provide a JSON file.
+
+To run the script in the shell you can use the following command line:
+> ./xmlToJSON.py -x plipFile.xml
+
+For further information:
+> ./xmlToJSON.py -h
+
+### Compare interactions for two ligands at the same residues: MultiIndexing: Interaction specific
+
+xmlToJSON.py -j1 <jsonfile1> -j2 <jsonfile2> -o <outputCsv>
+-------------------------
+-j1 --jsonfile1:	First JSON file obtained by xmlToJSON.py script
+-j2 --jsonfile2:	Second JSON file obtained by xmlToJSON.py script
+-o --outputCsv:	CSV output file
+  
 ## Pre-process protein complex and calculate energies
 
 ## Create interaction list with energies
