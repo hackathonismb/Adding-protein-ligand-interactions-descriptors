@@ -14,13 +14,13 @@ sPLinter is a code module that extracts protein-ligand interactions which can be
 Its Goal is to combine detailed information on ligand binding residues in proteins (in terms of biochemical interactions like salt-bridge, hydrogen bonding, pi-pi interactions, water-mediated interactions, etc.) with sequence/structure conservation analysis of the binding sites in related proteins, one can devise a rational strategy for drug design.
 
 # Installation 
-<TBD>
+TBD
 
 ## Dependencies
-<TBD>
+TBD
   
 # Configuration
-<TBD>
+TBD
   
 # Usage
 ## Generate PLIP interactions
@@ -35,9 +35,9 @@ Its Goal is to combine detailed information on ligand binding residues in protei
 # Testing
 
 # Contact
-ayllonbenitez.aaron@gmail.com	Aaron Ayllon-Benitez
-sangramsahu15@gmail.com	Sangram Keshari Sahu
-rachita.kumar9@gmail.com	Rachita K Kumar
-abrol@csun.edu Ravi Abrol
-sreeranjinibabu611@gmail.com	Sreeranjini Babu
+ayllonbenitez.aaron@gmail.com	Aaron Ayllon-Benitez <br>
+sangramsahu15@gmail.com	Sangram Keshari Sahu <br>
+rachita.kumar9@gmail.com	Rachita K Kumar <br>
+abrol@csun.edu Ravi Abrol <br>
+sreeranjinibabu611@gmail.com	Sreeranjini Babu <br>
 smalkaram@wvstateu.edu	Sridhar Malkaram
