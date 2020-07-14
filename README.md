@@ -1,4 +1,3 @@
-![sPLinter](logo.png?raw=true "Title")
 ![sPLinter](logo.png) <!-- .element height="50%" width="50%" -->
 
 
