@@ -18,6 +18,17 @@ TBD
 
 ## Dependencies
 TBD
+### Python modules
+json,pandas,xml
+### Protein-Ligand Interaction Profiler (https://projects.biotec.tu-dresden.de/plip-web/plip/index)
+For identification of noncovalent interactions between proteins and their ligands.
+### ACPYPE (https://pypi.org/project/acpype/)
+For topology file generation
+### Amber-tools20 (http://ambermd.org/AmberTools.php)
+For interaction energy computation
+### GROMACS (http://www.gromacs.org/) or NAMD (https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=NAMD)
+To setup the molecule for energy calculation
+
   
 # Configuration
 TBD
@@ -28,6 +39,21 @@ TBD
 
 ## Create interaction list
 
+### The xmlToJSON.py get a xml from Protein-Ligand Interaction Profiler (PLIP) database and provide a JSON file.
+
+To run the script in the shell you can use the following command line: <br>
+> ./xmlToJSON.py -x plipFile.xml
+
+For further information: <br>
+> ./xmlToJSON.py -h
+
+### Compare interactions for two ligands at the same residues: MultiIndexing: Interaction specific
+
+> xmlToJSON.py -j1 <jsonfile1> -j2 <jsonfile2> -o <outputCsv> <br>
+-j1 --jsonfile1:	First JSON file obtained by xmlToJSON.py script <br>
+-j2 --jsonfile2:	Second JSON file obtained by xmlToJSON.py script <br>
+-o --outputCsv:	CSV output file
+  
 ## Pre-process protein complex and calculate energies
 
 ## Create interaction list with energies
