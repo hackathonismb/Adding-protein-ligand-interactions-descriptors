@@ -23,6 +23,7 @@ TBD
 TBD
   
 # Usage
+TBD
 ## Generate PLIP interactions
 
 ## Create interaction list
@@ -33,6 +34,7 @@ TBD
 
 
 # Testing
+TBD
 
 # Contact
 ayllonbenitez.aaron@gmail.com	Aaron Ayllon-Benitez <br>
@@ -40,4 +42,4 @@ sangramsahu15@gmail.com	Sangram Keshari Sahu <br>
 rachita.kumar9@gmail.com	Rachita K Kumar <br>
 abrol@csun.edu Ravi Abrol <br>
 sreeranjinibabu611@gmail.com	Sreeranjini Babu <br>
-smalkaram@wvstateu.edu	Sridhar Malkaram
+smalkaram@wvstateu.edu	Sridhar Acharya Malkaram
