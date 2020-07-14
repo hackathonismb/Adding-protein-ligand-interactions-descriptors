@@ -23,6 +23,13 @@ Its Goal is to combine detailed information on ligand binding residues in protei
 <TBD>
   
 # Usage
-## Generating PLIP interactions
+## Generate PLIP interactions
+
+## Create interaction list
+
+## Pre-process protein complex and calculate energies
+
+## Create interaction list with energies
+
 
 # Testing
