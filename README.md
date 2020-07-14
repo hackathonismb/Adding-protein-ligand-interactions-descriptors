@@ -12,3 +12,17 @@ Evaluation of binding affinity of the protein with ligand is the primary focus i
 
 sPLinter is a code module that extracts protein-ligand interactions which can be plugged into other computational modules of iCN3D. 
 Its Goal is to combine detailed information on ligand binding residues in proteins (in terms of biochemical interactions like salt-bridge, hydrogen bonding, pi-pi interactions, water-mediated interactions, etc.) with sequence/structure conservation analysis of the binding sites in related proteins, one can devise a rational strategy for drug design.
+
+# Installation 
+<TBD>
+
+## Dependencies
+<TBD>
+  
+# Configuration
+<TBD>
+  
+# Usage
+## Generating PLIP interactions
+
+# Testing
