@@ -17,6 +17,16 @@ Its Goal is to combine detailed information on ligand binding residues in protei
 TBD
 
 ## Dependencies
+### Python modules
+json,pandas,xml
+### Protein-Ligand Interaction Profiler (https://projects.biotec.tu-dresden.de/plip-web/plip/index)
+For identification of noncovalent interactions between proteins and their ligands.
+### ACPYPE (https://pypi.org/project/acpype/)
+For topology file generation
+### Amber-tools20 (http://ambermd.org/AmberTools.php)
+For interaction energy computation
+### GROMACS (http://www.gromacs.org/) or NAMD (https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=NAMD)
+To setup the molecule for 
 TBD
   
 # Configuration
