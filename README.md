@@ -1,6 +1,6 @@
 ![sPLinter](logo.png) <!-- .element height="50%" width="50%" --> 
 
-#(<u>S</u>tructural <u>P</u>rotein <u>L</u>igand <u>Inter</u>action Descriptors)
+<!-- .element <u>S</u>tructural <u>P</u>rotein <u>L</u>igand <u>Inter</u>action Descriptors -->
 
 # What are protein-ligand interaction descriptors ?
 Protein-ligand complexes are formed mainly by reversible non-covalent interaction between the protein and ligand molecules. The interaction is a combination of hydrogen bonds, hydrophobic forces, van der Waals forces, pi-pi interactions and electrostatic interactions in which there is no sharing of electrons between the two interacting partner molecules. The binding affinity of protein ligand can be described by a comphrehensive representation of these interactions, called interaction descriptors, which provide information on the interaction partners, the structural and sequence context of the interaction and a quantitative description of the strength of the interaction.
