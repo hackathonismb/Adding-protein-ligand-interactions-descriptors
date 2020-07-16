@@ -1,0 +1,149 @@
+<body>
+
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#"> <img src="https://raw.githubusercontent.com/hackathonismb/Adding-protein-ligand-interactions-descriptors/master/logo.png" width="144" height="26" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+  <li class="nav-item">
+    <a class="nav-link clickChangesPage active" data-page='home' href="#">Home</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link clickChangesPage" data-page='about' href="#">About</a>
+</li>
+  <li class="nav-item">
+    <a class="nav-link clickChangesPage" data-page='task1' href="#">Task2</a>
+</li>
+
+</ul>
+
+</div>
+</nav>
+</header>
+  <div class="container">
+    <br>
+      {{> Template.dynamic template=currentPage}}
+    <br>
+  </div>
+      <script>
+      $('.navbar-nav .nav-link').click(function(){
+          $('.navbar-nav .nav-link').removeClass('active');
+          $(this).addClass('active');
+      })
+      </script>
+      <br>
+      <!-- FOOTER -->
+      <footer class="container fixed-bottom">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2020 ISMB hackathon </p>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+
+
+  <template name="home">
+    <p>Home!</p>
+
+  </template>
+
+  <template name="about">
+      <p>About!</p>
+  </template>
+
+  <template name="loading">
+    <h1>Loading ...</h1>
+    <br> <br> <img src="https://www.tinmantech.com/images/design/loading.gif" />
+  </template>
+
+  <template name = "task1">
+    <div class="row">
+    <h1> Structural Protein-Ligand Interaction (Splinter)</h1>
+    <br>
+  </div>
+  <div class="row">
+    <p> Some text... </p>
+  </div>
+  <div class="row">
+    <form>
+      <div class="row">
+        <div class="col-6">
+          <input type="text" class="form-control" name="prot1" placeholder="protein A (pdbID) - i.e 2HU4">
+        </div>
+        <div class="col-6">
+          <input type="text" class="form-control" name="prot2" placeholder="protein B (pdbID) - i.e 3B7E">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="form-check">
+             <input class="form-check-input" type="radio" name="sameForm" id="sameProt" value="1" checked>
+             <label class="form-check-label" for="sameProt">
+               Same protein different ligands
+             </label>
+           </div>
+        </div>
+        <div class="row">
+           <div class="form-check">
+             <input class="form-check-input" type="radio" name="sameForm" id="sameLig" value="2">
+             <label class="form-check-label" for="sameLig">
+               Same ligand different proteins
+             </label>
+           </div>
+      </div>
+      <br>
+      <div class="row">
+       <input type="submit" class="btn btn-primary" value="Submit">
+     </div>
+    </form>
+    <br>
+  </div>
+  </template>
+  <template name="result1">
+    <br><br>
+  <div class="row">
+<h1>Results</h1>
+  </div>
+  <div class="row">
+
+      <div class="col-6" style="border-style:solid;">
+      {{> firstProtein}}
+    </div>
+    <div class="col-6" id='div0' style="border-style:solid;">
+      {{> secondProtein}}
+    </div>
+  </div>
+  <div class="row">
+<h1>Common interactions</h1>
+  </div>
+  <div class="row" id="com">
+      {{ > commonProts onRendered}}
+
+  </div>
+    </template>
+
+    <template name="firstProtein">
+      <iframe src={{icn3d}} width="500" height="500" style="border:none"></iframe>
+
+      <h2>{{pdb}}</h2>
+      <p> {{name}}</p>
+
+    </template>
+    <template name="secondProtein">
+      <iframe src={{icn3d}} width="500" height="500" style="border:none"></iframe>
+
+      <h2>{{pdb}}</h2>
+      <p> {{name}}</p>
+
+    </template>
+
+    <template name="commonProts">
+
+
+    </template>
