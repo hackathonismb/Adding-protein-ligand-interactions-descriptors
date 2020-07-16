@@ -1,0 +1,442 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name="description" content="iCn3D Structure Viewer">
+<meta name="ncbi_db" content="structure"><meta name="ncbi_app" content="iCn3D"><meta name="ncbi_pdid" content="advanced">
+<meta name="keywords" content="NCBI, Structure, JavaScript, iCn3D, 3D, Viewer, WebGL, three.js, sequence, chemical">
+<meta name="robots" content="index,follow,noarchive">
+<meta name="ncbi_app" content="icn3d">
+<meta name="ncbi_pdid" content="example">
+<meta name="ncbi_db" content="structure">
+<meta name="ncbi_pinger_xml_http_request_override" content="false"/>
+<title>iCn3D: Web-based 3D Structure Viewer</title>
+<script type="text/javascript">
+    window.ncbi_startTime = new Date();
+</script>
+
+<style type="text/css">
+.gallery {float:left; padding: 5px; margin: 10px;}
+
+body {font-family: Verdana, Arial, Helvetica, sans-serif;}
+td.details-control {
+    background: url('../resources/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('../resources/details_close.png') no-repeat center center;
+}
+</style>
+
+</head>
+<body>
+<h3 style="text-align:center">Embed Multiple iCn3D Viewers in One Page</h3>
+<div id="divTest" class="gallery"></div>
+<div class="col-xs-12 w-100 p-3" style="padding-right: 10px;">
+    					<div class="table-container w-100 p-3" id="tableResult">
+
+    </div>
+
+  <div id="div0" class="gallery"></div>
+
+<link rel="stylesheet" href="https://www.ncbi.nlm.nih.gov/Structure/icn3d/lib/jquery-ui.min.css">
+<link rel="stylesheet" href="https://www.ncbi.nlm.nih.gov/Structure/icn3d/icn3d_full_ui.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+  <script src="https://www.ncbi.nlm.nih.gov/Structure/icn3d/lib/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="https://www.ncbi.nlm.nih.gov/Structure/icn3d/lib/jquery-ui.min.js"></script>
+<script src="https://www.ncbi.nlm.nih.gov/Structure/icn3d/lib/three.min.js"></script>
+<script src="https://www.ncbi.nlm.nih.gov/Structure/icn3d/icn3d_full_ui.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.1/spin.min.js'></script>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<script  type="text/javascript" src="d3.v4.min.js"></script>
+<script type="text/javascript" src="table.js"></script>
+<script  type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+
+  <script type="text/javascript">
+d3.json("test_data/3B7E.json",function(error, data) {  if (error) throw error;
+    console.log(data);
+      // use the FIXED name "icn3duiHash", which is used in iCn3DUI
+      window.icn3duiHash = {};
+
+      var h = ["bsID","Chain","resn","resi","hydint","hydbon","watbri","salbri","pistack","picat","halobon","metco"]
+         var r = [];
+
+
+             //console.log(dic[x]);
+
+
+
+
+      for(var i in data.bindingsites) {
+
+        var cells = [];
+
+        cells.push(i);
+
+        var bindData = data.bindingsites[i];
+
+        var idData = bindData.identifiers;
+          cells.push(idData.chain);
+          cells.push(idData.hetid);
+          cells.push(idData.position);
+
+
+        var interData = bindData.interactions;
+        var hydint  = 0;
+        var hydbon  = 0;
+        var watbri  = 0;
+        var salbri  = 0;
+        var pista   = 0;
+        var picat  = 0;
+        var halobon = 0;
+        var metco   = 0;
+        for(var type in interData) {
+
+          if(type == 'hydrophobic_interactions' && interData[type] != null) {
+
+            hydint = Object.keys(interData[type]).length;
+          }
+          else if(type == 'hydrogen_bonds' && interData[type] != null) {
+            hydbon =  Object.keys(interData[type]).length;
+          }
+          else if(type == 'water_bridges' && interData[type] != null) {
+            watbri =  Object.keys(interData[type]).length;
+          }
+          else if(type == 'salt_bridges' && interData[type] != null) {
+            salbri =  Object.keys(interData[type]).length;
+          }
+          else if(type == 'pi_stacks' && interData[type] != null) {
+            pista = Object.keys(interData[type]).length;
+          }
+          else if(type == 'pi_cation_interactions' && interData[type] != null) {
+            picat = Object.keys(interData[type]).length;
+          }
+          else if(type == 'halogen_bonds' && interData[type] != null) {
+            halobon = Object.keys(interData[type]).length;
+          }
+          else if(type == 'metal_complexes' && interData[type] != null) {
+            metco =  Object.keys(interData[type]).length;
+          }
+        }
+        cells.push(hydint);
+        cells.push(hydbon);
+        cells.push(watbri);
+        cells.push(salbri);
+        cells.push(pista);
+        cells.push(picat);
+        cells.push(halobon);
+        cells.push(metco);
+          r.push(cells);
+      }
+
+      var table = new Table()
+
+           //sets table data and builds it
+           table
+               .setHeader(h)
+               .setData(r)
+               .setTableClass('table table-striped table-bordered')
+               .setTableID('tableMod')
+               .build();
+     $( document ).ready(function() {
+
+
+                 // --Modify iCn3D Method 3--: start modifying iCn3DUI and iCn3D =================================================================
+                 iCn3DUI.prototype.setTools = function() { var me = this; //"use strict";
+                       var html = "";
+                       html += me.divStr + "selection' style='display:none;'><div style='position:absolute; z-index:555; float:left; display:table-row; margin: 32px 0px 0px 3px;'>";
+                       html += "<table style='margin-top: 3px; width:100px;'><tr valign='center'>";
+                       html += me.setTools_base();
+                       var buttonStyle = me.isMobile() ? 'none' : 'button';
+                       var tdStr = "<td valign='top'>";
+
+                       // start adding custom buttons ==========
+                       // e.g., html += tdStr + me.setButton(buttonStyle, 'saveimage', 'Save iCn3D PNG Image', 'Save iCn3D<br/>PNG Image') + "</td>";
+                       // end adding custom buttons ==========
+
+                       html += "</tr></table>";
+                       html += "</div></div>";
+                       return html;
+                 };
+
+                 iCn3DUI.prototype.allCustomEvents = function() { var me = this;
+                       // start adding custom events  ==========
+                       // e.g., $("#" + me.pre + "toggle").add("#" + me.pre + "mn2_toggle").click(function(e) {
+                       //       me.toggleSelection();
+                       //       var data = 'some data';
+                       //       $(this).trigger("from_icn3d", data);                       // => trigger event to send to other app
+                       //       // in other app
+                       //       $("#other_app").on("from_icn3d", function(event, data) {   // => other app to get the event and data
+                       //       ...});
+                       //};
+                       // end adding custom events  ==========
+                 };
+
+                 iCn3DUI.prototype.setCustomDialogs = function() { var me = this; //"use strict";
+                       var html = "";
+
+                       // start adding custom dialogs  ==========
+                       // e.g., html += "<div id='" + me.pre + "dl_rmsd'>";
+                       //html += "<br><b>Alignment RMSD</b>: " + me.inputTextStr + "id='" + me.pre + "realignrmsd' value='35' size='10'>&#8491;<br><br>";
+                       //html += "</div>";
+                       // end adding custom dialogs  ==========
+
+                       return html;
+                 };
+
+                 // modify iCn3D function
+                 iCn3DUI.prototype.modifyIcn3d = function() {var me = this; //"use strict";
+                       me.modifyIcn3dshowPicking();
+
+                       // start modifying iCn3D, not iCn3DUI  ==========
+                       //iCn3D.prototype.rayCaster = function(e, bClick) {
+                       //    me.icn3d.rayCasterBase(e, bClick);
+                       //};
+                       // end modifying iCn3D, not iCn3DUI  ==========
+
+                 };
+                 // end modifying iCn3D ============================================================
+
+                var table = $('#tableMod').DataTable({
+                  "ordering":false,
+                  "bDestroy": true,
+                  "deferRender": true,
+                  "responsive": {
+                    "details": {
+                      "type": 'column',
+                      "target": 'tr'
+                    }
+                  }
+                  ,
+                  "columnDefs": [
+                    {
+                      "className": 'control',
+                      "orderable": false,
+                      "targets":   0
+                    } ,
+                    {
+                      "targets": 1,
+                      "render": function ( data, type, row, meta ) {
+                        return data;
+                      }
+                    }
+                ]
+
+                });
+                table.draw();
+
+
+                $('.control').click( function () {
+console.log(this.innerHTML);
+setupViewer('pdbid', data.pdbid,i,data, 'div0')
+});
+      //setupViewer('pdbid', '1tup', 'div0');
+
+      function setupViewer(idName, idValue, i, data, divid, command) {
+
+        var options = {};
+
+        // --Three Methods to modify the iCn3D view--
+        // --Modify iCn3D Method 1--: You can change the default options.
+        //Options are available at: https://www.ncbi.nlm.nih.gov/Structure/icn3d/icn3d.html#DisplayOptions
+        //options['chemicalbinding'] = 'show';
+
+        // --Modify iCn3D Method 2--: add commands, e.g., 'color spectrum'
+        command = (command) ? command : '';
+
+        var cfg = {
+          divid: divid,
+          width: '100%',
+          height: '100%',
+          mobilemenu: false,
+          showcommand: true,
+          showtitle: true,
+          command: command,
+          options: options
+        };
+        if(idName !== '') cfg[idName] = idValue;
+
+        var icn3dui = new iCn3DUI(cfg);
+        //icn3dui.show3DStructure();
+
+        //communicate with the 3D viewer with chained functions
+        $.when(icn3dui.show3DStructure()).then(function() {
+              // add functions here
+              //icn3dui.updateHlAll();
+
+              var pdbid = data.pdbid;
+
+              var graph = {};
+
+              var me = icn3dui;
+
+              var pnts;
+                  graph[i] = {};
+                  graph[i].nodes = [];
+                  graph[i].links = [];
+                  console.log(i);
+                  var nodeHash = {};
+
+                  var bindData = data.bindingsites[i];
+
+                  var idData = bindData.identifiers;
+                  var chain = idData.chain;
+                  var resn = idData.hetid;
+                  var resi = idData.position;
+
+                  var interData = bindData.interactions;
+
+                  var value, color;
+                  var nodeid1, nodeid2, nodedesc1, nodedesc2, color1 = '00FFFF', color2 = '0000FF';
+                  for(var type in interData) {
+                    if(type == 'hydrophobic_interactions') {
+                        value = me.contactValue;
+                        color = me.contactColor;
+                        pnts = me.icn3d.contactpnts;
+                    }
+                    else if(type == 'hydrogen_bonds') {
+                        value = me.hbondValue;
+                        color = me.hbondColor;
+                        pnts = me.icn3d.hbondpnts;
+                    }
+                    else if(type == 'water_bridges') {
+                        value = me.hbondValue;
+                        color = me.hbondColor;
+                        pnts = me.icn3d.hbondpnts;
+                    }
+                    else if(type == 'salt_bridges') {
+                        value = me.ionicValue;
+                        color = me.ionicColor;
+                        pnts = me.icn3d.saltbridgepnts;
+                    }
+                    else if(type == 'pi_stacks') {
+                        value = me.pistackingValue;
+                        color = me.pistackingColor;
+                        pnts = me.icn3d.pistackingpnts;
+                    }
+                    else if(type == 'pi_cation_interactions') {
+                        value = me.picationValue;
+                        color = me.picationColor;
+                        pnts = me.icn3d.picationpnts;
+                    }
+                    else if(type == 'halogen_bonds') {
+                        value = me.halogenValue;
+                        color = me.halogenColor;
+                        pnts = me.icn3d.halogenpnts;
+                    }
+                    else if(type == 'metal_complexes') {
+                        value = me.ionicValue;
+                        color = me.ionicColor;
+                        pnts = me.icn3d.saltbridgepnts;
+                    }
+
+                    for(var j in interData[type]) {
+                        var inter = interData[type][j];
+
+                        // link: "source":"lig118.A", "target":"res30.A", "v":value, "c":"color"
+                        // node: "id": "lig118.A", "r": "1_1_pdbid_chain_resi", "s": "a", "x": 1, "y": 2, "c": "atomcolor"
+
+                        nodeid1 = me.icn3d.residueName2Abbr(inter.restype_lig.substr(0,3)) + inter.resnr_lig + '.' + inter.reschain_lig;
+                        nodeid2 = me.icn3d.residueName2Abbr(inter.restype.substr(0,3)) + inter.resnr + '.' + inter.reschain;
+
+                        var resid1 = pdbid + '_' + inter.reschain_lig + '_' + inter.resnr_lig;
+                        var resid2 = pdbid + '_' + inter.reschain + '_' + inter.resnr;
+
+                        nodedesc1 = '1_1_' + resid1;
+                        nodedesc2 = '1_1_' + resid2;
+
+                        var link = {"source": nodeid1, "target": nodeid2, "v": value, "c": color};
+                        graph[i].links.push(link);
+
+                        //!!! for first ligand
+                        // add the lines
+
+                            // any atom
+                            var serial1 = me.icn3d.getFirstAtomObj(me.icn3d.residues[resid1]).serial;
+                            var serial2 = me.icn3d.getFirstAtomObj(me.icn3d.residues[resid2]).serial;
+
+                            var pnt1 = {'serial': serial1, 'coord': new THREE.Vector3(inter.ligcoo.x, inter.ligcoo.y, inter.ligcoo.z)};
+                            var pnt2 = {'serial': serial2, 'coord': new THREE.Vector3(inter.protcoo.x, inter.protcoo.y, inter.protcoo.z)};
+
+                            pnts.push(pnt1);
+                            pnts.push(pnt2);
+
+
+                        var node1 = {"id": nodeid1, "r": nodedesc1, "s": "a", "x": inter.ligcoo.x, "y": inter.ligcoo.y, "c": color1};
+                        var node2 = {"id": nodeid2, "r": nodedesc2, "s": "b", "x": inter.protcoo.x, "y": inter.protcoo.y, "c": color2};
+
+                        nodeHash[nodeid1] = node1;
+                        nodeHash[nodeid2] = node2;
+                    }
+                  } // for type
+
+                        me.icn3d.opts['hbonds']             = 'yes';                 //yes, no
+                        me.icn3d.opts['saltbridge']         = 'yes';                 //yes, no
+                        me.icn3d.opts['contact']            = 'yes';                 //yes, no
+                        me.icn3d.opts['halogen']            = 'yes';                 //yes, no
+                        me.icn3d.opts['pi-cation']            = 'yes';                 //yes, no
+                        me.icn3d.opts['pi-stacking']            = 'yes';                 //yes, no
+
+                      // show the selected chains
+                      me.icn3d.hAtoms = {};
+                      var chainHash = {};
+
+                      for(var nodeid in nodeHash) {
+                          graph[i].nodes.push(nodeHash[nodeid]);
+
+                          var residOri = nodeHash[nodeid].r; // 1_1_pdbid_chain_resi
+                          var resid = residOri.substr(4);
+                          var chainid = resid.substr(0, resid.lastIndexOf('_'));
+                          chainHash[chainid] = 1;
+
+                          me.icn3d.hAtoms = me.icn3d.unionHash(me.icn3d.hAtoms, me.icn3d.residues[resid]);
+
+                      }
+
+                      me.icn3d.dAtoms = {};
+                      for(var chainid in chainHash) {
+                          me.icn3d.dAtoms = me.icn3d.unionHash(me.icn3d.dAtoms, me.icn3d.chains[chainid]);
+                      }
+                      me.icn3d.zoominSelection();
+                      me.icn3d.draw();
+
+                      // show 2D interaction graph
+                      var grapgDataStr = JSON.stringify(graph[i]);
+                      console.log(grapgDataStr);
+                      me.openDialog(me.pre + 'dl_linegraph', 'Show interactions between two lines of residue nodes');
+                      me.drawLineGraph(grapgDataStr);
+
+
+
+        });
+
+        window.icn3duiHash[divid] = icn3dui;
+      }
+
+
+
+    }); // document ready
+})
+  </script>
+
+  <!-- log & Google Analytics -->
+  <script type="text/javascript" src="https://www.ncbi.nlm.nih.gov/core/pinger/pinger.js"></script>
+
+</body></html>
